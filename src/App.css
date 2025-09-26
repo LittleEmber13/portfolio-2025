@@ -6,11 +6,11 @@
   color: #ffffff;
 }
 
-html, body {
+html,
+body {
   height: 100%;
-  margin: 0;  
-  background-color: black;
-  color: white;  
+  margin: 0;
+  color: white;
 }
 
 button {
@@ -28,4 +28,46 @@ button {
 .card:hover {
   background-color: rgb(23, 23, 56);
   border: 1px solid rgba(173, 216, 230, 0.5);
+}
+
+.animated-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  overflow: hidden;
+  z-index: -1;
+  background-color: rgb(7, 10, 11);
+}
+
+.animated-background-square {
+  width: 70vw;
+  height: 100vw;
+  background: rgb(31, 10, 186);
+  position: fixed;
+  opacity: 0.05;
+  animation: moveShape 50s infinite alternate ease-in-out;
+}
+
+@keyframes moveShape {
+  0% {
+    transform: translate(-20vw, 0vh);
+  }
+
+  25% {
+    transform: translate(20vw, 0vh);
+  }
+
+  50% {
+    transform: translate(50vw, 0vh);
+  }
+
+  75% {
+    transform: translate(40vw, 0vh);
+  }
+
+  100% {
+    transform: translate(120vw, 0vh);
+  }
 }
