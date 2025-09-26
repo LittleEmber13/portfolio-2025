@@ -1,4 +1,5 @@
 import prefab from "../assets/prefab.jpg";
+import Project from "../components/project";
 
 export default function Projects() {
     return (
@@ -13,35 +14,20 @@ export default function Projects() {
                         width: "100%",
                     }}
                 >
-                    <img
-                        src={prefab}
-                        alt="Prefab"
-                        style={{
-                            width: "100%",
-                            height: "100%",
-                            maxHeight: "200px",
-                            objectFit: "contain",
-                        }}
+                    <Project
+                        name="Project Name"
+                        description="Project description"
+                        technologies={["Next.js", "Tailwind"]}
                     />
-                    <img
-                        src={prefab}
-                        alt="Prefab"
-                        style={{
-                            width: "100%",
-                            height: "100%",
-                            maxHeight: "200px",
-                            objectFit: "contain",
-                        }}
+                    <Project
+                        name="Project Name"
+                        description="Project description"
+                        technologies={["Flutter", "Firebase"]}
                     />
-                    <img
-                        src={prefab}
-                        alt="Prefab"
-                        style={{
-                            width: "100%",
-                            height: "100%",
-                            maxHeight: "200px",
-                            objectFit: "contain",
-                        }}
+                    <Project
+                        name="Project Name"
+                        description="Project description"
+                        technologies={["React.js", "Tailwind", "Framer Motion"]}
                     />
                 </div>
                 <div
@@ -53,35 +39,15 @@ export default function Projects() {
                         marginTop: "16px",
                     }}
                 >
-                    <img
-                        src={prefab}
-                        alt="Prefab"
-                        style={{
-                            width: "100%",
-                            height: "100%",
-                            maxHeight: "200px",
-                            objectFit: "contain",
-                        }}
+                    <Project
+                        name="Project Name"
+                        description="Project description"
+                        technologies={["Flutter"]}
                     />
-                    <img
-                        src={prefab}
-                        alt="Prefab"
-                        style={{
-                            width: "100%",
-                            height: "100%",
-                            maxHeight: "200px",
-                            objectFit: "contain",
-                        }}
-                    />
-                    <img
-                        src={prefab}
-                        alt="Prefab"
-                        style={{
-                            width: "100%",
-                            height: "100%",
-                            maxHeight: "200px",
-                            objectFit: "contain",
-                        }}
+                    <Project
+                        name="Project Name"
+                        description="Project description"
+                        technologies={["Symfony", "Docker"]}
                     />
                 </div>
             </div>
