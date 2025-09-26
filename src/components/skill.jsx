@@ -1,13 +1,13 @@
 export default function Skill({ name, imgSrc }) {
     return (
-        <div style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "8px",
-            width: "60px",
-            backgroundColor: "yellow",
-        }}>
+        <div
+            style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                gap: "8px",
+                width: "60px",
+            }}>
             <div style={{
                 backgroundColor: "red",
                 borderRadius: "50%",

@@ -2,12 +2,13 @@ import prefab from "../assets/prefab.jpg";
 
 export default function Project({ name, description, technologies }) {
     return (
-        <div style={{
+        <div 
+        className="card"
+        style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             width: "250px",
-            backgroundColor: "yellow",
         }}>
             <img
                 src={prefab}

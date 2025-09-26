@@ -21,26 +21,28 @@ export default function Contact() {
                 justifyContent: "center",
                 gap: "16px",
             }}>
-                <div style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    width: "250px",
-                    backgroundColor: "yellow",
-                }}>
+                <div
+                    className="card"
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        width: "250px",
+                    }}>
                     <h1>Get in touch</h1>
                     <p>Feel free to contact me for any work or suggestions below</p>
                     <p>Email</p>
                     <p>LinkedIn</p>
                     <p>Github</p>
                 </div>
-                <div style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    width: "250px",
-                    backgroundColor: "yellow",
-                }}>
+                <div
+                    className="card"
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        width: "250px",
+                    }}>
                     <p>Email</p>
                     <input
                         type="text"

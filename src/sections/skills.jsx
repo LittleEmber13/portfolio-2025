@@ -10,10 +10,11 @@ export default function Skills() {
                 justifyContent: "center",
                 gap: "16px",
             }}>
-                <div style={{
-                    backgroundColor: "blue",
-                    padding: "16px",
-                }}
+                <div
+                    className="card"
+                    style={{
+                        padding: "16px",
+                    }}
                 >
                     <h3>Fontend Develpment</h3>
                     <div style={{
@@ -45,10 +46,11 @@ export default function Skills() {
                         <Skill name={"Framer Motion"} imgSrc={prefab} />
                     </div>
                 </div>
-                <div style={{
-                    backgroundColor: "blue",
-                    padding: "16px",
-                }}
+                <div
+                    className="card"
+                    style={{
+                        padding: "16px",
+                    }}
                 >
                     <h3>Backend & Database</h3>
                     <div style={{
@@ -80,10 +82,11 @@ export default function Skills() {
                         <Skill name={"MongoDB"} imgSrc={prefab} />
                     </div>
                 </div>
-                <div style={{
-                    backgroundColor: "blue",
-                    padding: "16px",
-                }}
+                <div
+                    className="card"
+                    style={{
+                        padding: "16px",
+                    }}
                 >
                     <h3>Other</h3>
                     <div style={{
