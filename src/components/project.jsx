@@ -1,8 +1,13 @@
 import prefab from "../assets/prefab.jpg";
+import { motion } from "framer-motion";
 
 export default function Project({ name, description, technologies }) {
     return (
-        <div
+        <motion.div
+            whileHover={{
+                scale: 1.025,
+                transition: { duration: 0.1 },
+            }}
             className="card"
             style={{
                 padding: "0px",
@@ -50,8 +55,6 @@ export default function Project({ name, description, technologies }) {
                     ))}
                 </div>
             </div>
-
-
-        </div>
+        </motion.div>
     );
 }
