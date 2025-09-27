@@ -2,47 +2,56 @@ import prefab from "../assets/prefab.jpg";
 
 export default function Project({ name, description, technologies }) {
     return (
-        <div 
-        className="card"
-        style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            width: "250px",
-        }}>
+        <div
+            className="card"
+            style={{
+                padding: "0px",
+                display: "flex",
+                flexDirection: "column",
+                width: "250px",
+                textAlign: "start",
+            }}>
             <img
                 src={prefab}
                 alt="Prefab"
                 style={{
                     width: "100%",
-                    height: "100%",
                     objectFit: "contain",
+                    display: "block",
                 }}
             />
-            <p>{name}</p>
-            <p>{description}</p>
             <div style={{
-                display: "flex",
-                margin: "8px",
-                marginBottom: "16px",
+                textAlign: "start",
+                padding: "16px",
             }}>
-                {technologies.map((tech, index) => (
-                    <div
-                        key={index}
-                        style={{
-                            display: "flex",
-                            backgroundColor: "#1b568cff",
-                            borderRadius: "6px",
-                            padding: "6px",
-                            margin: "2px",
-                            alignItems: "center",
-                            justifyContent: "center",
-                        }}>
-                        {tech}
-                    </div>
+                <p>{name}</p>
+                <p>{description}</p>
+                <div style={{
+                    display: "flex",
+                    gap: "4px",
+                }}>
+                    {technologies.map((tech) => (
+                        <div
+                            className="icon-button"
+                            style={{
+                                width: 24,
+                                height: 24,
+                            }}>
+                            <img
+                                src={tech}
+                                alt={name}
+                                style={{
+                                    width: "50%",
+                                    height: "50%",
+                                    objectFit: "contain",
+                                }} />
+                        </div>
 
-                ))}
+                    ))}
+                </div>
             </div>
+
+
         </div>
     );
 }

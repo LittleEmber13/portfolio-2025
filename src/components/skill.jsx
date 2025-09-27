@@ -1,4 +1,4 @@
-export default function Skill({ name, imgSrc }) {
+export default function Skill({ name, imgSrc, size }) {
     return (
         <div
             style={{
@@ -8,22 +8,18 @@ export default function Skill({ name, imgSrc }) {
                 gap: "8px",
                 width: "60px",
             }}>
-            <div style={{
-                backgroundColor: "red",
-                borderRadius: "50%",
-                width: 48,
-                height: 48,
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                overflow: "hidden",
-            }}>
+            <div
+                className="icon-button"
+                style={{
+                    width: size,
+                    height: size,
+                }}>
                 <img
                     src={imgSrc}
                     alt={name}
                     style={{
-                        width: "70%",
-                        height: "70%",
+                        width: "50%",
+                        height: "50%",
                         objectFit: "contain",
                     }} />
             </div>

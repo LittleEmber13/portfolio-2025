@@ -10,9 +10,11 @@ function App() {
     <>
       <AnimatedBackground />
       <Welcome />
-      <Projects />
-      <Skills />
-      <Contact />
+      <div className='solid-background'>
+        <Projects />
+        <Skills />
+        <Contact />
+      </div>
     </>
   )
 }

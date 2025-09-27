@@ -1,5 +1,13 @@
 import Skill from "../components/skill";
 import prefab from "../assets/prefab.jpg";
+import typescript from "../assets/icons/typescript.png";
+import tailwind from "../assets/icons/tailwind.png";
+import react from "../assets/icons/react.png";
+import nextjs from "../assets/icons/nextjs.png";
+import javascript from "../assets/icons/javascript.png";
+import git from "../assets/icons/git.png";
+import framerMotion from "../assets/icons/framer-motion.webp";
+import docker from "../assets/icons/docker.svg";
 
 export default function Skills() {
     return (
@@ -22,9 +30,9 @@ export default function Skills() {
                         gap: "16px",
                         justifyContent: "start",
                     }}>
-                        <Skill name={"ReactJs"} imgSrc={prefab} />
-                        <Skill name={"Next.js"} imgSrc={prefab} />
-                        <Skill name={"Typescript"} imgSrc={prefab} />
+                        <Skill name={"ReactJs"} imgSrc={react} size={48} />
+                        <Skill name={"Next.js"} imgSrc={nextjs} size={48} />
+                        <Skill name={"Typescript"} imgSrc={typescript} size={48} />
                     </div>
                     <div style={{
                         display: "flex",
@@ -32,9 +40,9 @@ export default function Skills() {
                         justifyContent: "start",
                         marginTop: "16px",
                     }}>
-                        <Skill name={"Javascript"} imgSrc={prefab} />
-                        <Skill name={"CSS3"} imgSrc={prefab} />
-                        <Skill name={"HTML5"} imgSrc={prefab} />
+                        <Skill name={"Javascript"} imgSrc={javascript} size={48} />
+                        <Skill name={"CSS3"} imgSrc={prefab} size={48} />
+                        <Skill name={"HTML5"} imgSrc={prefab} size={48} />
                     </div>
                     <div style={{
                         display: "flex",
@@ -42,8 +50,8 @@ export default function Skills() {
                         justifyContent: "start",
                         marginTop: "16px",
                     }}>
-                        <Skill name={"Tailwind CSS"} imgSrc={prefab} />
-                        <Skill name={"Framer Motion"} imgSrc={prefab} />
+                        <Skill name={"Tailwind CSS"} imgSrc={tailwind} size={48} />
+                        <Skill name={"Framer Motion"} imgSrc={framerMotion} size={48} />
                     </div>
                 </div>
                 <div
@@ -58,9 +66,9 @@ export default function Skills() {
                         gap: "16px",
                         justifyContent: "start",
                     }}>
-                        <Skill name={"Java"} imgSrc={prefab} />
-                        <Skill name={"C#"} imgSrc={prefab} />
-                        <Skill name={"Python"} imgSrc={prefab} />
+                        <Skill name={"Java"} imgSrc={prefab} size={48} />
+                        <Skill name={"C#"} imgSrc={prefab} size={48} />
+                        <Skill name={"Python"} imgSrc={prefab} size={48} />
                     </div>
                     <div style={{
                         display: "flex",
@@ -68,9 +76,9 @@ export default function Skills() {
                         justifyContent: "start",
                         marginTop: "16px",
                     }}>
-                        <Skill name={"Prisma"} imgSrc={prefab} />
-                        <Skill name={"Symfony"} imgSrc={prefab} />
-                        <Skill name={"MariaDB"} imgSrc={prefab} />
+                        <Skill name={"Prisma"} imgSrc={prefab} size={48} />
+                        <Skill name={"Symfony"} imgSrc={prefab} size={48} />
+                        <Skill name={"MariaDB"} imgSrc={prefab} size={48} />
                     </div>
                     <div style={{
                         display: "flex",
@@ -78,8 +86,8 @@ export default function Skills() {
                         justifyContent: "start",
                         marginTop: "16px",
                     }}>
-                        <Skill name={"MySQL"} imgSrc={prefab} />
-                        <Skill name={"MongoDB"} imgSrc={prefab} />
+                        <Skill name={"MySQL"} imgSrc={prefab} size={48} />
+                        <Skill name={"MongoDB"} imgSrc={prefab} size={48} />
                     </div>
                 </div>
                 <div
@@ -94,9 +102,9 @@ export default function Skills() {
                         gap: "16px",
                         justifyContent: "start",
                     }}>
-                        <Skill name={"Git"} imgSrc={prefab} />
-                        <Skill name={"RESTful APIs"} imgSrc={prefab} />
-                        <Skill name={"Firebase"} imgSrc={prefab} />
+                        <Skill name={"Git"} imgSrc={git} size={48} />
+                        <Skill name={"RESTful APIs"} imgSrc={prefab} size={48} />
+                        <Skill name={"Firebase"} imgSrc={prefab} size={48} />
                     </div>
                     <div style={{
                         display: "flex",
@@ -104,9 +112,9 @@ export default function Skills() {
                         justifyContent: "start",
                         marginTop: "16px",
                     }}>
-                        <Skill name={"Responsive Design"} imgSrc={prefab} />
-                        <Skill name={"Figma"} imgSrc={prefab} />
-                        <Skill name={"Docker"} imgSrc={prefab} />
+                        <Skill name={"Responsive Design"} imgSrc={prefab} size={48} />
+                        <Skill name={"Figma"} imgSrc={prefab} size={48} />
+                        <Skill name={"Docker"} imgSrc={docker} size={48} />
                     </div>
                 </div>
             </div>

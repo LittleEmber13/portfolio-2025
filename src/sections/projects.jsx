@@ -1,5 +1,7 @@
-import prefab from "../assets/prefab.jpg";
 import Project from "../components/project";
+import typescript from "../assets/icons/typescript.png";
+import tailwind from "../assets/icons/tailwind.png";
+import react from "../assets/icons/react.png";
 
 export default function Projects() {
     return (
@@ -17,17 +19,17 @@ export default function Projects() {
                     <Project
                         name="Project Name"
                         description="Project description"
-                        technologies={["Next.js", "Tailwind"]}
+                        technologies={[react, tailwind]}
                     />
                     <Project
                         name="Project Name"
                         description="Project description"
-                        technologies={["Flutter", "Firebase"]}
+                        technologies={[typescript, react]}
                     />
                     <Project
                         name="Project Name"
                         description="Project description"
-                        technologies={["React.js", "Tailwind", "Framer Motion"]}
+                        technologies={[tailwind, react, typescript]}
                     />
                 </div>
                 <div
@@ -42,12 +44,12 @@ export default function Projects() {
                     <Project
                         name="Project Name"
                         description="Project description"
-                        technologies={["Flutter"]}
+                        technologies={[tailwind, react]}
                     />
                     <Project
                         name="Project Name"
                         description="Project description"
-                        technologies={["Symfony", "Docker"]}
+                        technologies={[typescript]}
                     />
                 </div>
             </div>
