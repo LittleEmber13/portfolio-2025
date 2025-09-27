@@ -3,38 +3,21 @@ import { motion } from "framer-motion";
 
 export default function Project({ name, description, technologies }) {
     return (
-        <motion.div
+        <motion.div className="flex flex-col w-[250px] text-start !p-0 card"
             whileHover={{
                 scale: 1.025,
                 transition: { duration: 0.1 },
-            }}
-            className="card"
-            style={{
-                padding: "0px",
-                display: "flex",
-                flexDirection: "column",
-                width: "250px",
-                textAlign: "start",
-            }}>
+            }} >
             <img
                 src={prefab}
                 alt="Prefab"
-                style={{
-                    width: "100%",
-                    objectFit: "contain",
-                    display: "block",
-                }}
+                className="w-full contain-content block"
             />
-            <div style={{
-                textAlign: "start",
-                padding: "16px",
-            }}>
+            <div className="p-[16px] text-start">
                 <p>{name}</p>
                 <p>{description}</p>
-                <div style={{
-                    display: "flex",
-                    gap: "4px",
-                }}>
+                <div
+                    className="flex gap-[4px]">
                     {technologies.map((tech) => (
                         <div
                             className="icon-button"
