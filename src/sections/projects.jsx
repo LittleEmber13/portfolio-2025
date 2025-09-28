@@ -8,14 +8,7 @@ export default function Projects() {
         <section>
             <h1>Projects i've worked on</h1>
             <div>
-                <div
-                    style={{
-                        display: "grid",
-                        gridTemplateColumns: "repeat(3, 1fr)",
-                        gap: "20px",
-                        width: "100%",
-                    }}
-                >
+                <div className="grid grid-cols-3 gap-5 w-full" >
                     <Project
                         name="Project Name"
                         description="Project description"
@@ -32,15 +25,7 @@ export default function Projects() {
                         technologies={[tailwind, react, typescript]}
                     />
                 </div>
-                <div
-                    style={{
-                        display: "grid",
-                        gridTemplateColumns: "repeat(3, 1fr)",
-                        gap: "20px",
-                        width: "100%",
-                        marginTop: "16px",
-                    }}
-                >
+                <div className="grid grid-cols-3 gap-5 w-full mt-4" >
                     <Project
                         name="Project Name"
                         description="Project description"

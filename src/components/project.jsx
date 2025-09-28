@@ -20,21 +20,9 @@ export default function Project({ name, description, technologies }) {
                     className="flex gap-[4px]">
                     {technologies.map((tech) => (
                         <div
-                            className="icon-button"
-                            style={{
-                                width: 24,
-                                height: 24,
-                            }}>
-                            <img
-                                src={tech}
-                                alt={name}
-                                style={{
-                                    width: "50%",
-                                    height: "50%",
-                                    objectFit: "contain",
-                                }} />
+                            className="icon-button w-[24px] h-[24px]">
+                            <img src={tech} alt={name} class="w-1/2 h-1/2 object-contain" />
                         </div>
-
                     ))}
                 </div>
             </div>

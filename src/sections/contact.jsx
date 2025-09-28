@@ -16,33 +16,15 @@ export default function Contact() {
     return (
         <section >
             <h1>Contact</h1>
-            <div style={{
-                display: "flex",
-                justifyContent: "center",
-                gap: "16px",
-            }}>
-                <div
-                    className="card"
-                    style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                        width: "250px",
-                    }}>
+            <div className="flex justify-center gap-[16px]">
+                <div className="card align-middle w-[250px]">
                     <h1>Get in touch</h1>
                     <p>Feel free to contact me for any work or suggestions below</p>
                     <p>Email</p>
                     <p>LinkedIn</p>
                     <p>Github</p>
                 </div>
-                <div
-                    className="card"
-                    style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                        width: "250px",
-                    }}>
+                <div className="card align-middle w-[250px]">
                     <p>Email</p>
                     <input
                         type="text"
@@ -57,11 +39,7 @@ export default function Contact() {
                         onChange={handleMessageChange}
                         placeholder="Your message"
                     />
-                    <button
-                        style={{
-                            color: "white",
-                            marginTop: "16px",
-                        }}> Send Message</button>
+                    <button className="mt-[16px] text-white p-2"> Send Message</button>
 
                 </div>
             </div>

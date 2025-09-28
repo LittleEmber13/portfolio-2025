@@ -11,14 +11,9 @@ function App() {
       <StarsBackground
         speed={250}
         starColor='#ffffff63'
-        style={{
-          position: "fixed",
-          zIndex: "-1",
-        }} />
-      <div style={{
-        justifyItems: "center",
-        maxWidth: "1000px",
-      }}>
+        className="fixed -z-10"
+      />
+      <div className="justify-items-center max-w-[1000px]">
         <Welcome />
         <div className='solid-background'>
           <Projects />

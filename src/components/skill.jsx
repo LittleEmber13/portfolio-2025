@@ -1,33 +1,16 @@
 export default function Skill({ name, imgSrc, size }) {
     return (
-        <div
-            style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                gap: "8px",
-                width: "60px",
-            }}>
+        <div class="flex flex-col items-center gap-2 w-[60px]">
             <div
                 className="icon-button"
                 style={{
                     width: size,
                     height: size,
                 }}>
-                <img
-                    src={imgSrc}
-                    alt={name}
-                    style={{
-                        width: "50%",
-                        height: "50%",
-                        objectFit: "contain",
-                    }} />
+                <img src={imgSrc} alt={name} className="w-1/2 h-1/2 object-contain" />
             </div>
-            <p style={{
-                margin: 0,
-                fontSize: "14px",
-                textAlign: "center"
-            }}> {name} </p>
+            <p className="m-0 text-sm text-center">{name}</p>
+
         </div>
     );
 }

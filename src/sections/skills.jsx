@@ -13,59 +13,30 @@ export default function Skills() {
     return (
         <section >
             <h1>My skills</h1>
-            <div style={{
-                display: "flex",
-                justifyContent: "center",
-                gap: "16px",
-            }}>
-                <div
-                    className="card"
-                    style={{
-                        padding: "16px",
-                    }}
-                >
+            <div
+                className="flex justify-center gap-[16px]">
+                <div className="card p-[16px]" >
                     <h3>Fontend Develpment</h3>
-                    <div style={{
-                        display: "flex",
-                        gap: "16px",
-                        justifyContent: "start",
-                    }}>
+                    <div
+                        className="flex gap-[16px] justify-start">
                         <Skill name={"ReactJs"} imgSrc={react} size={48} />
                         <Skill name={"Next.js"} imgSrc={nextjs} size={48} />
                         <Skill name={"Typescript"} imgSrc={typescript} size={48} />
                     </div>
-                    <div style={{
-                        display: "flex",
-                        gap: "16px",
-                        justifyContent: "start",
-                        marginTop: "16px",
-                    }}>
+                    <div
+                        className="flex gap-[16px] justify-start mt-[16px]">
                         <Skill name={"Javascript"} imgSrc={javascript} size={48} />
                         <Skill name={"CSS3"} imgSrc={prefab} size={48} />
                         <Skill name={"HTML5"} imgSrc={prefab} size={48} />
                     </div>
-                    <div style={{
-                        display: "flex",
-                        gap: "16px",
-                        justifyContent: "start",
-                        marginTop: "16px",
-                    }}>
+                    <div className="flex gap-[16px] justify-start mt-[16px]">
                         <Skill name={"Tailwind CSS"} imgSrc={tailwind} size={48} />
                         <Skill name={"Framer Motion"} imgSrc={framerMotion} size={48} />
                     </div>
                 </div>
-                <div
-                    className="card"
-                    style={{
-                        padding: "16px",
-                    }}
-                >
+                <div className="card p-[16px]">
                     <h3>Backend & Database</h3>
-                    <div style={{
-                        display: "flex",
-                        gap: "16px",
-                        justifyContent: "start",
-                    }}>
+                    <div className="flex gap-[16px] justify-start">
                         <Skill name={"Java"} imgSrc={prefab} size={48} />
                         <Skill name={"C#"} imgSrc={prefab} size={48} />
                         <Skill name={"Python"} imgSrc={prefab} size={48} />
@@ -80,38 +51,20 @@ export default function Skills() {
                         <Skill name={"Symfony"} imgSrc={prefab} size={48} />
                         <Skill name={"MariaDB"} imgSrc={prefab} size={48} />
                     </div>
-                    <div style={{
-                        display: "flex",
-                        gap: "16px",
-                        justifyContent: "start",
-                        marginTop: "16px",
-                    }}>
+                    <div className="flex gap-[16px] justify-start mt-[16px]">
                         <Skill name={"MySQL"} imgSrc={prefab} size={48} />
                         <Skill name={"MongoDB"} imgSrc={prefab} size={48} />
                     </div>
                 </div>
                 <div
-                    className="card"
-                    style={{
-                        padding: "16px",
-                    }}
-                >
+                    className="card p-[16px]">
                     <h3>Other</h3>
-                    <div style={{
-                        display: "flex",
-                        gap: "16px",
-                        justifyContent: "start",
-                    }}>
+                    <div className="flex gap-[16px] justify-start ">
                         <Skill name={"Git"} imgSrc={git} size={48} />
                         <Skill name={"RESTful APIs"} imgSrc={prefab} size={48} />
                         <Skill name={"Firebase"} imgSrc={prefab} size={48} />
                     </div>
-                    <div style={{
-                        display: "flex",
-                        gap: "16px",
-                        justifyContent: "start",
-                        marginTop: "16px",
-                    }}>
+                    <div className="flex gap-[16px] justify-start mt-[16px]">
                         <Skill name={"Responsive Design"} imgSrc={prefab} size={48} />
                         <Skill name={"Figma"} imgSrc={prefab} size={48} />
                         <Skill name={"Docker"} imgSrc={docker} size={48} />
