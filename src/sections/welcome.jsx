@@ -1,13 +1,13 @@
 import github from "../assets/icons/github.png";
 import mail from "../assets/icons/mail.png";
 import linkedin from "../assets/icons/linkedin.png";
+import TypingText from "@/components/typing_text";
 
 export default function Welcome() {
     return (
         <section>
             <div className="justify-items-start" >
-                <h1>Hi,</h1>
-                <h1>I'm Daniel</h1>
+                <TypingText text="Hi, I'm Daniel"/>
                 <h3>Software developer</h3>
 
             </div>
@@ -18,7 +18,7 @@ export default function Welcome() {
             </div>
             <div className="flex justify-center p-4 gap-4">
                 <div className="icon-button w-[42px] h-[42px]">
-                    <img src={github} alt={name} className="w-1/2 h-auto object-contain" />
+                    <img src={github} alt={name} class="w-1/2 h-auto object-contain" />
                 </div>
                 <div className="icon-button w-[42px] h-[42px]">
                     <img src={linkedin} alt={name} className="w-1/2 h-auto object-contain" />
