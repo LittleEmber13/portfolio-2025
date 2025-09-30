@@ -16,8 +16,7 @@ export default function Projects() {
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="max-w-[1000px] w-full mx-auto p-8"
-        >
+            className="w-full mx-auto p-8">
             <h1 className="text-left pb-8">Projects I've worked on</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 w-full justify-items-center">
                 <Project

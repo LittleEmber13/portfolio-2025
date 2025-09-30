@@ -3,8 +3,6 @@
 @tailwind utilities;
 
 #root {
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
   color: #ffffff;
   --color-primary: #212121;
@@ -14,13 +12,16 @@
 
 }
 
+h1 {
+font-size: 24px;
+}
+
 html,
 body {
   height: 100%;
-  margin: 0;
   color: white;
-  justify-content: center;
-  justify-items: center;
+  justify-content: stretch;
+  justify-items: stretch;
 }
 
 .solid-background {
