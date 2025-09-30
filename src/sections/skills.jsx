@@ -8,10 +8,19 @@ import javascript from "../assets/icons/javascript.png";
 import git from "../assets/icons/git.png";
 import framerMotion from "../assets/icons/framer-motion.webp";
 import docker from "../assets/icons/docker.svg";
+import { motion } from "framer-motion";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 export default function Skills() {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+
     return (
-        <section >
+        <motion.div ref={ref} initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, ease: "easeOut" }} >
             <h1>My skills</h1>
             <div
                 className="flex justify-center gap-[16px]">
@@ -71,6 +80,6 @@ export default function Skills() {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.div>
     );
 }

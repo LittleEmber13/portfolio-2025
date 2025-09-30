@@ -8,7 +8,7 @@ export default function Welcome() {
         <section>
             <div className="justify-items-start" >
                 <TypingText text="Hi, I'm Daniel"/>
-                <h3>Software developer</h3>
+                <h1>Software developer</h1>
 
             </div>
             <div className="justify-items-start justify-start items-start text-start pt-2">

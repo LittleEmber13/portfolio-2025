@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 export default function Contact() {
     const [email, setEmail] = useState("");
@@ -13,8 +16,14 @@ export default function Contact() {
         setMessage(event.target.value);
     };
 
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+
     return (
-        <section >
+        <motion.div ref={ref} initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, ease: "easeOut" }} >
             <h1>Contact</h1>
             <div className="flex justify-center gap-[16px]">
                 <div className="card align-middle w-[250px]">
@@ -43,6 +52,6 @@ export default function Contact() {
 
                 </div>
             </div>
-        </section>
+        </motion.div>
     );
 }
