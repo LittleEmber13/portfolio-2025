@@ -21,9 +21,11 @@ export default function Skills() {
         <motion.div ref={ref} initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: "easeOut" }} >
-            <h1>My skills</h1>
+            <div className="w-full bg-red-400 mb-8">
+                <h1 className="text-left p-2 pl-8">My skills</h1>
+            </div>
             <div
-                className="flex justify-center gap-[16px]">
+                className="flex justify-center gap-[16px] pb-8">
                 <div className="card p-[16px]" >
                     <h3>Fontend Develpment</h3>
                     <div

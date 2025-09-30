@@ -24,8 +24,10 @@ export default function Contact() {
         <motion.div ref={ref} initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: "easeOut" }} >
-            <h1>Contact</h1>
-            <div className="flex justify-center gap-[16px]">
+            <div className="w-full bg-red-400 mb-8">
+                <h1 className="text-left p-2 pl-8">Contact</h1>
+            </div>
+            <div className="flex justify-center gap-[16px] pb-8">
                 <div className="card align-middle w-[250px]">
                     <h1>Get in touch</h1>
                     <p>Feel free to contact me for any work or suggestions below</p>

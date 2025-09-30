@@ -16,9 +16,11 @@ export default function Projects() {
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="w-full mx-auto p-8">
-            <h1 className="text-left pb-8">Projects I've worked on</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 w-full justify-items-center">
+            className="w-full mx-auto">
+            <div className="w-full bg-red-400 mb-8">
+                <h1 className="text-left p-2 pl-8">Projects I've worked on</h1>
+            </div>
+            <div className="grid grid-cols-1 pb-8 sm:grid-cols-2 md:grid-cols-3 gap-5 w-full justify-items-center">
                 <Project
                     name="Project Name"
                     description="Project description"
