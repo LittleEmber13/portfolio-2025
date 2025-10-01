@@ -5,8 +5,8 @@ import TypingText from "@/components/typing_text";
 
 export default function Welcome() {
     return (
-        <section>
-            <div className="justify-items-start pb-4" >
+        <section className="flex flex-col items-center justify-center min-h-screen">
+            <div className="justify-items-start pb-4 w-full" >
                 <TypingText text="Hi, I'm Daniel" />
                 <h1>Software developer</h1>
             </div>
@@ -15,7 +15,7 @@ export default function Welcome() {
                 <br />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
             </div>
-            <div className="flex justify-center p-4 gap-4">
+            <div className="flex justify-center p-8 gap-4">
                 <div className="icon-button w-[42px] h-[42px]">
                     <img src={github} alt={name} class="w-1/2 h-auto object-contain" />
                 </div>

@@ -13,7 +13,7 @@
 }
 
 h1 {
-font-size: 24px;
+  font-size: 24px;
 }
 
 html,
@@ -27,6 +27,7 @@ body {
 .solid-background {
   background-color: var(--color-primary);
   max-width: 1000px;
+  width: 100%;
 }
 
 section {
@@ -35,6 +36,11 @@ section {
 
 button {
   background-color: var(--color-primary-light);
+}
+
+.title-div {
+  width: 100%;
+  background-color: var(--color-primary-content);
 }
 
 .card {

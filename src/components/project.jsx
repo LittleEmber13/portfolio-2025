@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 export default function Project({ name, description, technologies }) {
     return (
         <motion.div className="flex flex-col w-[250px] text-start !p-0 card"
+            initial={{ scale: 1 }}
             whileHover={{
                 scale: 1.025,
                 transition: { duration: 0.1 },

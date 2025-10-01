@@ -14,13 +14,13 @@ function App() {
         className="fixed -z-10"
       />
       <div className='w-full justify-items-center'>
-        <div className="justify-items-center max-w-[1000px] p-8">
+        <div className="justify-items-center max-w-[1000px] px-8">
           <Welcome />
-          <div className='solid-background w-full'>
             <Projects />
+            <div className="solid-background">
             <Skills />
             <Contact />
-          </div>
+            </div>
         </div>
       </div>
     </>

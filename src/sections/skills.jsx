@@ -20,11 +20,12 @@ export default function Skills() {
     return (
         <motion.div ref={ref} initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, ease: "easeOut" }} >
-            <div className="w-full bg-red-400 mb-8">
+            transition={{ duration: 0.8, ease: "easeOut" }} 
+            className="solid-background">
+            <div className="title-div">
                 <h1 className="text-left p-2 pl-8">My skills</h1>
             </div>
-            <div className="flex flex-col md:flex-row justify-center gap-[16px] pb-8">
+            <div className="flex flex-col md:flex-row justify-center gap-[16px]  px-8 py-12">
                 <div className="card p-[16px]">
                     <h3 className="mb-4">Frontend Development</h3>
                     <div className="grid grid-cols-5 md:grid-cols-3 gap-4 justify-items-center">
