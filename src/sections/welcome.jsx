@@ -3,9 +3,9 @@ import mail from "../assets/icons/mail.png";
 import linkedin from "../assets/icons/linkedin.png";
 import TypingText from "@/components/typing_text";
 
-export default function Welcome() {
+export default function Welcome({ id }) {
     return (
-        <section className="flex flex-col items-center justify-center min-h-screen">
+        <section id={id} className="flex flex-col items-center justify-center min-h-screen">
             <div className="justify-items-start pb-4 w-full" >
                 <TypingText text="Hi, I'm Daniel" />
                 <h1>Software developer</h1>

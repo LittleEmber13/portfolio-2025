@@ -26,12 +26,16 @@ body {
 
 .solid-background {
   background-color: var(--color-primary);
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
 }
 
 section {
   padding: 32px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 button {

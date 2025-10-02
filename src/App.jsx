@@ -1,5 +1,6 @@
 import './App.css'
 import { StarsBackground } from './components/animate-ui/components/backgrounds/stars';
+import NavBar from './components/nav_bar';
 import Contact from './sections/contact';
 import Projects from './sections/projects';
 import Skills from './sections/skills';
@@ -14,13 +15,14 @@ function App() {
         className="fixed -z-10"
       />
       <div className='w-full justify-items-center'>
-        <div className="justify-items-center max-w-[1000px] px-8">
-          <Welcome />
-            <Projects />
-            <div className="solid-background">
-            <Skills />
-            <Contact />
-            </div>
+        <NavBar />
+        <div className="justify-items-center max-w-[1200px] px-8">
+          <Welcome id='welcome' />
+          <Projects id='projects' />
+          <div className="solid-background">
+            <Skills id='skills' />
+            <Contact id='contact' />
+          </div>
         </div>
       </div>
     </>
