@@ -24,10 +24,10 @@ export default function Contact({ id }) {
         <section id={id}>
             <motion.div ref={ref} initial={{ opacity: 0, y: 50 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-                className="solid-background">
-                <div className="title-div">
-                    <h3 className="text-left p-2 pl-8">Contact</h3>
+                transition={{ duration: 0.8, ease: "easeOut" }}>
+                <div className="flex items-center pr-8">
+                    <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap">Contact</h3>
+                    <div className="h-2 rounded-full bg-red-400 w-full" />
                 </div>
                 <div className="flex justify-center gap-[16px] px-8 py-12">
                     <div className="card align-middle w-[250px]">
