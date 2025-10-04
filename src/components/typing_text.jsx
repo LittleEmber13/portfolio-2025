@@ -16,7 +16,7 @@ export default function TypingText({ text, color = "orange", size = 64, speed = 
 
   return (
     <div
-      className="flex items-center font-mono"
+      className="flex items-center"
       style={{ fontSize: `${size}px`, color }}
     >
       <span>{displayedText}</span>

@@ -24,7 +24,7 @@ export default function Skills({ id }) {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="solid-background">
                 <div className="title-div">
-                    <h1 className="text-left p-2 pl-8">My skills</h1>
+                    <h3 className="text-left p-2 pl-8">My skills</h3>
                 </div>
                 <div className="flex flex-col md:flex-row justify-center gap-[16px]  px-8 py-12">
                     <div className="card p-[16px]">

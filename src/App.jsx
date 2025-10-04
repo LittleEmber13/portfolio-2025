@@ -1,4 +1,3 @@
-import './App.css'
 import { StarsBackground } from './components/animate-ui/components/backgrounds/stars';
 import NavBar from './components/nav_bar';
 import Contact from './sections/contact';
@@ -18,8 +17,8 @@ function App() {
         <NavBar />
         <div className="justify-items-center max-w-[1200px] px-8">
           <Welcome id='welcome' />
-          <Projects id='projects' />
           <div className="solid-background">
+            <Projects id='projects' />
             <Skills id='skills' />
             <Contact id='contact' />
           </div>

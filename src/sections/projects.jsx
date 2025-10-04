@@ -19,7 +19,7 @@ export default function Projects({ id }) {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="w-full mx-auto solid-background">
                 <div className="title-div">
-                    <h1 className="text-left p-2 pl-8">Projects I've worked on</h1>
+                    <h3 className="text-left p-2 pl-8">Projects I've worked on</h3>
                 </div>
                 <div className="grid grid-cols-1 px-8 py-12 md:grid-cols-2 lg:grid-cols-3 gap-12 w-full justify-items-center">
                     <Project

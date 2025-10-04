@@ -27,11 +27,11 @@ export default function Contact({ id }) {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="solid-background">
                 <div className="title-div">
-                    <h1 className="text-left p-2 pl-8">Contact</h1>
+                    <h3 className="text-left p-2 pl-8">Contact</h3>
                 </div>
                 <div className="flex justify-center gap-[16px] px-8 py-12">
                     <div className="card align-middle w-[250px]">
-                        <h1>Get in touch</h1>
+                        <h3>Get in touch</h3>
                         <p>Feel free to contact me for any work or suggestions below</p>
                         <p>Email</p>
                         <p>LinkedIn</p>
