@@ -73,7 +73,7 @@ export default function Contact({ id }) {
                             placeholder="Your message"
                             className="w-full"
                         />
-                        <button className="mt-[16px] text-white p-2"> Send Message</button>
+                        <button className="mt-[16px] text-white p-2">Send Message</button>
                     </div>
                 </div>
             </motion.div>
