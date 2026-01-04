@@ -3,6 +3,19 @@ import prefab from "../assets/prefab.jpg";
 import typescript from "../assets/icons/typescript.png";
 import tailwind from "../assets/icons/tailwind.png";
 import react from "../assets/icons/react.png";
+import csharp from "../assets/icons/csharp.png";
+import figma from "../assets/icons/figma.png";
+import java from "../assets/icons/java.png";
+import mariadb from "../assets/icons/mariadb.png";
+import mongodb from "../assets/icons/mongodb.png";
+import mysql from "../assets/icons/mysql.png";
+import prisma from "../assets/icons/prisma.png";
+import python from "../assets/icons/python.png";
+import html from "../assets/icons/html.png";
+import css from "../assets/icons/css.png";
+import rest from "../assets/icons/rest.png";
+import responsive from "../assets/icons/idea.png";
+import symfony from "../assets/icons/symfony.png";
 import flutter from "../assets/icons/flutter.png";
 import firebase from "../assets/icons/firebase.png";
 import nextjs from "../assets/icons/nextjs.png";
@@ -39,8 +52,8 @@ export default function Skills({ id }) {
                                     <Skill name={"Next.js"} imgSrc={nextjs} size={48} />
                                     <Skill name={"Typescript"} imgSrc={typescript} size={48} />
                                     <Skill name={"Javascript"} imgSrc={javascript} size={48} />
-                                    <Skill name={"CSS3"} imgSrc={prefab} size={48} />
-                                    <Skill name={"HTML5"} imgSrc={prefab} size={48} />
+                                    <Skill name={"CSS3"} imgSrc={css} size={48} />
+                                    <Skill name={"HTML5"} imgSrc={html} size={48} />
                                     <Skill name={"Tailwind CSS"} imgSrc={tailwind} size={48} />
                                     <Skill name={"Framer Motion"} imgSrc={framerMotion} size={48} />
                                 </div>
@@ -48,14 +61,14 @@ export default function Skills({ id }) {
                             <div className="card !p-[16px]">
                                 <h5 className="mb-4">Backend & Database</h5>
                                 <div className="grid grid-cols-5 md:grid-cols-3 gap-4 justify-items-center">
-                                    <Skill name={"Java"} imgSrc={prefab} size={48} />
-                                    <Skill name={"C#"} imgSrc={prefab} size={48} />
-                                    <Skill name={"Python"} imgSrc={prefab} size={48} />
-                                    <Skill name={"Prisma"} imgSrc={prefab} size={48} />
-                                    <Skill name={"Symfony"} imgSrc={prefab} size={48} />
-                                    <Skill name={"MariaDB"} imgSrc={prefab} size={48} />
-                                    <Skill name={"MySQL"} imgSrc={prefab} size={48} />
-                                    <Skill name={"MongoDB"} imgSrc={prefab} size={48} />
+                                    <Skill name={"Java"} imgSrc={java} size={48} />
+                                    <Skill name={"C#"} imgSrc={csharp} size={48} />
+                                    <Skill name={"Python"} imgSrc={python} size={48} />
+                                    <Skill name={"Prisma"} imgSrc={prisma} size={48} />
+                                    <Skill name={"Symfony"} imgSrc={symfony} size={48} />
+                                    <Skill name={"MariaDB"} imgSrc={mariadb} size={48} />
+                                    <Skill name={"MySQL"} imgSrc={mysql} size={48} />
+                                    <Skill name={"MongoDB"} imgSrc={mongodb} size={48} />
                                 </div>
                             </div>
                         </div>
@@ -63,10 +76,10 @@ export default function Skills({ id }) {
                             <h5 className="mb-4">Other</h5>
                             <div className="grid grid-cols-5 md:grid-cols-6 gap-4 justify-items-center">
                                 <Skill name={"Git"} imgSrc={git} size={48} />
-                                <Skill name={"RESTful APIs"} imgSrc={prefab} size={48} />
+                                <Skill name={"RESTful APIs"} imgSrc={rest} size={48} />
                                 <Skill name={"Firebase"} imgSrc={firebase} size={48} />
-                                <Skill name={"Responsive Design"} imgSrc={prefab} size={48} />
-                                <Skill name={"Figma"} imgSrc={prefab} size={48} />
+                                <Skill name={"Responsive Design"} imgSrc={responsive} size={48} />
+                                <Skill name={"Figma"} imgSrc={figma} size={48} />
                                 <Skill name={"Docker"} imgSrc={docker} size={48} />
                             </div>
                         </div>
