@@ -1,10 +1,15 @@
 import Project from "../components/project";
 import typescript from "../assets/icons/typescript.png";
 import tailwind from "../assets/icons/tailwind.png";
+import framerMotion from "../assets/icons/framer-motion.webp";
+import flutter from "../assets/icons/flutter.png";
+import nextjs from "../assets/icons/nextjs.png";
+import javascript from "../assets/icons/javascript.png";
+import firebase from "../assets/icons/firebase.png";
 import react from "../assets/icons/react.png";
-import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Projects({ id }) {
     const ref = useRef(null);
@@ -24,29 +29,29 @@ export default function Projects({ id }) {
                 </div>
                 <div className="grid grid-cols-1 px-8 py-12 md:grid-cols-2 lg:grid-cols-3 gap-12 w-full justify-items-center">
                     <Project
-                        name="Project Name"
-                        description="Project description"
-                        technologies={[react, tailwind]}
+                        name="KeepassUX"
+                        description="Password manager built using the open-source KeePass library"
+                        technologies={[flutter]}
                     />
                     <Project
-                        name="Project Name"
-                        description="Project description"
-                        technologies={[typescript, react]}
+                        name="UGC Database"
+                        description="Platform that helps agencies find and hire content creators for advertising through advanced search and filtering."
+                        technologies={[typescript, nextjs, tailwind]}
                     />
                     <Project
-                        name="Project Name"
-                        description="Project description"
-                        technologies={[tailwind, react, typescript]}
+                        name="Berrly"
+                        description="Management system for clubs, associations, and foundations, including event organization and ticket management"
+                        technologies={[flutter]}
                     />
                     <Project
-                        name="Project Name"
-                        description="Project description"
-                        technologies={[tailwind, react]}
+                        name="Bovidata"
+                        description="Livestock management system with features for health tracking, inventory management, expense tracking, and more"
+                        technologies={[flutter, firebase]}
                     />
-                    <Project
-                        name="Project Name"
-                        description="Project description"
-                        technologies={[typescript]}
+                                 <Project
+                        name="Porfolio"
+                        description="The current portfolio. You can explore the code in more detail here"
+                        technologies={[react, javascript, framerMotion, tailwind]}
                     />
                 </div>
             </motion.div>

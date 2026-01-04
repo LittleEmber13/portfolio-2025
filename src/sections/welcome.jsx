@@ -11,9 +11,10 @@ export default function Welcome({ id }) {
                 <h3>Software developer</h3>
             </div>
             <div className="justify-items-start justify-start items-start text-start pt-2">
-                <p>Lorem ipsum dolor sit amet, dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                <p>I have 3 years of experience in mobile development with Flutter, having participated in several projects that have helped me grow significantly as a developer, learning to write better code and solve real-world problems. I also have experience with React and Next.js, which allows me to work comfortably on both mobile and web projects.</p>
                 <br />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                <p>I enjoy writing clean, scalable, and easy-to-maintain code. I am always learning new things and looking for ways to improve what I do.</p>
+
             </div>
             <div className="flex justify-center p-8 gap-4">
                 <div className="icon-button w-[42px] h-[42px]">

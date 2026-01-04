@@ -3,6 +3,8 @@ import prefab from "../assets/prefab.jpg";
 import typescript from "../assets/icons/typescript.png";
 import tailwind from "../assets/icons/tailwind.png";
 import react from "../assets/icons/react.png";
+import flutter from "../assets/icons/flutter.png";
+import firebase from "../assets/icons/firebase.png";
 import nextjs from "../assets/icons/nextjs.png";
 import javascript from "../assets/icons/javascript.png";
 import git from "../assets/icons/git.png";
@@ -32,6 +34,7 @@ export default function Skills({ id }) {
                             <div className="card !p-[16px]">
                                 <h5 className="mb-4">Frontend Development</h5>
                                 <div className="grid grid-cols-5 md:grid-cols-3 gap-4 justify-items-center">
+                                    <Skill name={"Flutter"} imgSrc={flutter} size={48} />
                                     <Skill name={"ReactJs"} imgSrc={react} size={48} />
                                     <Skill name={"Next.js"} imgSrc={nextjs} size={48} />
                                     <Skill name={"Typescript"} imgSrc={typescript} size={48} />
@@ -61,7 +64,7 @@ export default function Skills({ id }) {
                             <div className="grid grid-cols-5 md:grid-cols-6 gap-4 justify-items-center">
                                 <Skill name={"Git"} imgSrc={git} size={48} />
                                 <Skill name={"RESTful APIs"} imgSrc={prefab} size={48} />
-                                <Skill name={"Firebase"} imgSrc={prefab} size={48} />
+                                <Skill name={"Firebase"} imgSrc={firebase} size={48} />
                                 <Skill name={"Responsive Design"} imgSrc={prefab} size={48} />
                                 <Skill name={"Figma"} imgSrc={prefab} size={48} />
                                 <Skill name={"Docker"} imgSrc={docker} size={48} />
@@ -69,7 +72,9 @@ export default function Skills({ id }) {
                         </div>
                     </div>
                     <div className="flex flex-col w-[100%] md:w-[50%]">
-                        <p>Lorem ipsum dolor sit amet, dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        <p>I apply these technologies to build efficient, scalable, and well-designed solutions, paying close attention to both performance and user experience. My skills go beyond tools, they involve writing clean code, continuously learning, and adapting to new challenges.</p>
+                        <br />
+                        <p>If these technologies align with what you’re looking for, I’d be excited to collaborate on new projects.</p>
                         <button className="mt-[16px] text-white p-2">Contact me</button>
                     </div>
                 </div>
