@@ -3,6 +3,7 @@ import typescript from "../assets/icons/typescript.png";
 import tailwind from "../assets/icons/tailwind.png";
 import framerMotion from "../assets/icons/framer-motion.webp";
 import flutter from "../assets/icons/flutter.png";
+import ugcdatabase from "../assets/projects/ugcdatabase.png";
 import nextjs from "../assets/icons/nextjs.png";
 import javascript from "../assets/icons/javascript.png";
 import firebase from "../assets/icons/firebase.png";
@@ -22,37 +23,63 @@ export default function Projects({ id }) {
                 initial={{ opacity: 0, y: 50 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="w-full">
+                className="w-full pt-8">
                 <div className="flex items-center pr-8">
-                    <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap">Projects I've worked on</h3>
-                    <div className="h-2 rounded-full bg-red-400 w-full"/>
+                    <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap">Projects</h3>
+                    <div className="h-2 rounded-full bg-red-400 w-full" />
                 </div>
-                <div className="grid grid-cols-1 px-8 py-12 md:grid-cols-2 lg:grid-cols-3 gap-12 w-full justify-items-center">
-                    <Project
-                        name="KeepassUX"
-                        description="Password manager built using the open-source KeePass library"
-                        technologies={[flutter]}
-                    />
-                    <Project
-                        name="UGC Database"
-                        description="Platform that helps agencies find and hire content creators for advertising through advanced search and filtering."
-                        technologies={[typescript, nextjs, tailwind]}
-                    />
-                    <Project
-                        name="Berrly"
-                        description="Management system for clubs, associations, and foundations, including event organization and ticket management"
-                        technologies={[flutter]}
-                    />
-                    <Project
-                        name="Bovidata"
-                        description="Livestock management system with features for health tracking, inventory management, expense tracking, and more"
-                        technologies={[flutter, firebase]}
-                    />
-                                 <Project
-                        name="Porfolio"
-                        description="The current portfolio. You can explore the code in more detail here"
-                        technologies={[react, javascript, framerMotion, tailwind]}
-                    />
+                <div className="px-8 py-12 w-full">
+                    <div className="columns-1 md:columns-2 gap-12 space-y-12">
+                        <div>
+                            <h2>Projects I've worked on</h2>
+                            <br />
+                            <p>Here are some of the projects I’ve worked on, including both personal and professional projects.</p>
+                            <br />
+                            <p>
+                                You can see more of my work on my{" "}
+                                <a
+                                    href="https://github.com/LittleEmber13"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-500 hover:underline"
+                                >
+                                    GitHub
+                                </a>
+                            </p>
+                        </div>
+                        <Project
+                            name="KeepassUX"
+                            openSource={true}
+                            description="Password manager built using the open-source KeePass library"
+                            technologies={[flutter]}
+                            githubUrl={"https://github.com/LittleEmber13/keepassUX"}
+                        />
+                        <Project
+                            name="Porfolio"
+                            openSource={true}
+                            description="The current portfolio. You can explore the code in more detail here"
+                            technologies={[react, javascript, framerMotion, tailwind]}
+                        />
+                        <Project
+                            name="UGC Database"
+                            openSource={false}
+                            image={ugcdatabase}
+                            description="Platform that helps agencies find and hire content creators for advertising through advanced search and filtering."
+                            technologies={[typescript, nextjs, tailwind]}
+                        />
+                        <Project
+                            name="Berrly"
+                            openSource={false}
+                            description="Management system for clubs, associations, and foundations, including event organization and ticket management"
+                            technologies={[flutter]}
+                        />
+                        <Project
+                            name="Bovidata"
+                            openSource={false}
+                            description="Livestock management system with features for health tracking, inventory management, expense tracking, and more"
+                            technologies={[flutter, firebase]}
+                        />
+                    </div>
                 </div>
             </motion.div>
         </section>
