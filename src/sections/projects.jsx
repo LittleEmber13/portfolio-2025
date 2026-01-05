@@ -4,6 +4,8 @@ import tailwind from "../assets/icons/tailwind.png";
 import framerMotion from "../assets/icons/framer-motion.webp";
 import flutter from "../assets/icons/flutter.png";
 import ugcdatabase from "../assets/projects/ugcdatabase.png";
+import berrly from "../assets/projects/berrly.png";
+import bovidata from "../assets/projects/bovidata.png";
 import nextjs from "../assets/icons/nextjs.png";
 import javascript from "../assets/icons/javascript.png";
 import firebase from "../assets/icons/firebase.png";
@@ -70,12 +72,14 @@ export default function Projects({ id }) {
                         <Project
                             name="Berrly"
                             openSource={false}
+                            image={berrly}
                             description="Management system for clubs, associations, and foundations, including event organization and ticket management"
                             technologies={[flutter]}
                         />
                         <Project
                             name="Bovidata"
                             openSource={false}
+                            image={bovidata}
                             description="Livestock management system with features for health tracking, inventory management, expense tracking, and more"
                             technologies={[flutter, firebase]}
                         />
