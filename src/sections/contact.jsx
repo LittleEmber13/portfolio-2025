@@ -6,6 +6,7 @@ import github from "../assets/icons/github.png";
 import mail from "../assets/icons/mail.png";
 import linkedin from "../assets/icons/linkedin.png";
 import emailjs from "emailjs-com";
+import { GITHUB_LINK, LINKEDIN_LINK, EMAIL } from '../constants.jsx';
 
 export default function Contact({ id }) {
     const [email, setEmail] = useState("");
@@ -49,56 +50,46 @@ export default function Contact({ id }) {
                     <div className="card align-middle !p-[16px]">
                         <h3>Get in touch</h3>
                         <p className="mt-2">Feel free to contact me for any work or suggestions below</p>
-                        <div className="flex flex-col gap-3">
-                            <div className="flex">
-                                <a
-                                    href="mailto:ddur1302@gmail.com"
-                                    rel="noopener noreferrer">
+                        <div className="flex flex-col gap-1">
+                            <a
+                                href={`mailto:${EMAIL}`}
+                                rel="noopener noreferrer">
+                                <div className="flex">
                                     <div className="interactable w-[24px] h-[24px] mr-4">
                                         <img src={mail} className="w-1/2 h-auto object-contain" />
                                     </div>
-                                </a>
-                                <a
-                                    href="mailto:ddur1302@gmail.com"
-                                    rel="noopener noreferrer"
-                                    className="text-blue-500 hover:underline">
-                                    Email
-                                </a>
-                            </div>
-                            <div className="flex">
-                                <a
-                                    href={"https://linkedin.com/in/daniel-d-043975201/"}
-                                    target="_blank"
-                                    rel="noopener noreferrer">
+                                    <p className="text-blue-500 hover:underline">
+                                        Email
+                                    </p>
+                                </div>
+                            </a>
+                            <a
+                                href={LINKEDIN_LINK}
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <div className="flex">
+
                                     <div className="interactable w-[24px] h-[24px] mr-4">
                                         <img src={linkedin} className="w-1/2 h-auto object-contain" />
                                     </div>
-                                </a>
-                                <a
-                                    href={"https://linkedin.com/in/daniel-d-043975201/"}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-blue-500 hover:underline">
-                                    LinkedIn
-                                </a>
-                            </div>
-                            <div className="flex">
-                                <a
-                                    href={"https://github.com/LittleEmber13"}
-                                    target="_blank"
-                                    rel="noopener noreferrer">
+                                    <p className="text-blue-500 hover:underline">
+                                        LinkedIn
+                                    </p>
+                                </div>
+                            </a>
+                            <a
+                                href={GITHUB_LINK}
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <div className="flex">
                                     <div className="interactable w-[24px] h-[24px] mr-4">
                                         <img src={github} className="w-1/2 h-auto object-contain" />
                                     </div>
-                                </a>
-                                <a
-                                    href={"https://github.com/LittleEmber13"}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-blue-500 hover:underline">
-                                    Github
-                                </a>
-                            </div>
+                                    <p className="text-blue-500 hover:underline">
+                                        Github
+                                    </p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <form onSubmit={sendEmail}>
@@ -125,6 +116,6 @@ export default function Contact({ id }) {
                     </form>
                 </div>
             </motion.div>
-        </section>
+        </section >
     );
 }

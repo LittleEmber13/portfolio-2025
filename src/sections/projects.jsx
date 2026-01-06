@@ -14,6 +14,7 @@ import react from "../assets/icons/react.png";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
+import { GITHUB_LINK } from '../constants.jsx';
 
 export default function Projects({ id }) {
     const ref = useRef(null);
@@ -41,7 +42,7 @@ export default function Projects({ id }) {
                             <p>
                                 You can see more of my work on my{" "}
                                 <a
-                                    href="https://github.com/LittleEmber13"
+                                    href={GITHUB_LINK}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-blue-500 hover:underline"

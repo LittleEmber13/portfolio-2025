@@ -3,6 +3,7 @@ import mail from "../assets/icons/mail.png";
 import header from "../assets/gifs/header.gif";
 import linkedin from "../assets/icons/linkedin.png";
 import TypingText from "@/components/typing_text";
+import { GITHUB_LINK, LINKEDIN_LINK, EMAIL } from '../constants.jsx';
 
 export default function Welcome({ id }) {
     return (
@@ -52,7 +53,7 @@ export default function Welcome({ id }) {
             }
             <div className="flex justify-center p-8 pt-16 gap-4">
                 <a
-                    href="https://github.com/LittleEmber13"
+                    href={GITHUB_LINK}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-500 hover:underline"
@@ -62,7 +63,7 @@ export default function Welcome({ id }) {
                     </div>
                 </a>
                 <a
-                    href="https://linkedin.com/in/daniel-d-043975201/"
+                    href={LINKEDIN_LINK}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-500 hover:underline"
@@ -72,7 +73,7 @@ export default function Welcome({ id }) {
                     </div>
                 </a>
                 <a
-                    href="mailto:ddur1302@gmail.com"
+                    href={`mailto:${EMAIL}`}
                     rel="noopener noreferrer"
                     className="text-blue-500 hover:underline"
                 >
