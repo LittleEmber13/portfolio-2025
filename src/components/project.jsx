@@ -30,31 +30,30 @@ export default function Project({ name, description, technologies, openSource, i
                 </div>
                 <br />
                 <p>{description}</p>
-                <div className="flex justify-between items-center gap-2 w-full">
-                    {/* Grupo de íconos normales */}
-                    <div className="flex gap-[4px]">
-                        {technologies.map((tech) => (
-                            <div key={tech} className="icon-button w-[24px] h-[24px]">
-                                <img
-                                    src={tech}
-                                    alt={name}
-                                    className="w-1/2 h-1/2 object-contain"
-                                />
-                            </div>
-                        ))}
-                    </div>
+                <div className="pb-4">
                     {githubUrl && (
                         <a
-                            href={githubUrl}
+                            href="https://github.com/LittleEmber13/keepassUX"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="icon-button w-[24px] h-[24px] hover:scale-110 transition-transform"
+                            className="text-blue-500 hover:underline"
                         >
-                            <img src={github} className="w-1/2 h-auto object-contain" />
+                            Source code
                         </a>
                     )}
                 </div>
+                <div className="flex items-center gap-[4px]">
+                    {technologies.map((tech) => (
+                        <div key={tech} className="icon-button w-[24px] h-[24px]">
+                            <img
+                                src={tech}
+                                alt={name}
+                                className="w-1/2 h-1/2 object-contain"
+                            />
+                        </div>
+                    ))}
 
+                </div>
             </div>
         </motion.div>
     );

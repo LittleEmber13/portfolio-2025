@@ -6,10 +6,12 @@
   font-family: 'Bricolage Grotesque', sans-serif;
   background-color: rgb(65, 209, 125);
   color: #ffffff;
-  --color-primary: #212121;
+  --color-primary: #151515;
   --color-primary-dark: #0d0d0d;
-  --color-primary-light: #4d4d4d;
-  --color-primary-content: #3a3a3a;
+  --color-primary-light: #141414;
+  --color-primary-content: #1e1e1e;
+  --color-tag: #006eff;
+  --color-button: #2a2f37;
 }
 
 h1,
@@ -73,10 +75,6 @@ html {
   scroll-behavior: smooth;
 }
 
-button {
-  background-color: var(--color-primary-light);
-}
-
 .title-div {
   width: 100%;
   background-color: var(--color-primary-content);
@@ -96,23 +94,31 @@ button {
 }
 
 .icon-button {
-  background: var(--color-primary-light);
-  opacity: 0.8;
+  color: var(--color-tag);
+  background-color: color-mix(in srgb, currentColor 5%, transparent);
+  border: 1px solid color-mix(in srgb, currentColor 50%, transparent);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden,
+  overflow: hidden;
+  transition: 
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .icon-button:hover {
-  background: var(--color-primary-light);
-  opacity: 1;
+  background-color: color-mix(in srgb, currentColor 20%, transparent);
+  border-color: currentColor;
+}
+
+.interactable {
+  background-color: var(--color-button);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden,
+  overflow: hidden;
 }
 
 .animated-background {
@@ -159,23 +165,16 @@ button {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--color-button);
   cursor: pointer;
-  transition: border-color 0.25s;
 }
 
 button:hover {
-  border-color: #646cff;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  filter: brightness(1.08);
 }
 
 input[type="text"],

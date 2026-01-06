@@ -31,26 +31,26 @@ export default function Contact({ id }) {
                 transition={{ duration: 0.8, ease: "easeOut" }}>
                 <div className="flex items-center pr-8">
                     <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap">Contact</h3>
-                    <div className="h-2 rounded-full bg-red-400 w-full" />
+                    <div className="h-2 rounded-full bg-[var(--color-primary-content)] w-full" />
                 </div>
                 <div className="flex justify-center gap-[16px] px-8 py-12">
                     <div className="card align-middle !p-[16px]">
                         <h3>Get in touch</h3>
                         <p className="mt-2">Feel free to contact me for any work or suggestions below</p>
                         <div className="flex">
-                            <div className="icon-button w-[24px] h-[24px] mr-4">
+                            <div className="interactable w-[24px] h-[24px] mr-4">
                                 <img src={mail} className="w-1/2 h-auto object-contain" />
                             </div>
                             <p>Email</p>
                         </div>
                         <div className="flex">
-                            <div className="icon-button w-[24px] h-[24px] mr-4">
+                            <div className="interactable w-[24px] h-[24px] mr-4">
                                 <img src={linkedin} className="w-1/2 h-auto object-contain" />
                             </div>
                             <p>LinkedIn</p>
                         </div>
                         <div className="flex">
-                            <div className="icon-button w-[24px] h-[24px] mr-4">
+                            <div className="interactable w-[24px] h-[24px] mr-4">
                                 <img src={github} className="w-1/2 h-auto object-contain" />
                             </div>
                             <p>Github</p>
@@ -71,9 +71,9 @@ export default function Contact({ id }) {
                             value={message}
                             onChange={handleMessageChange}
                             placeholder="Your message"
-                            className="w-full"
+                            className="w-full mb-[16px]"
                         />
-                        <button className="mt-[16px] text-white p-2">Send Message</button>
+                        <button>Send Message</button>
                     </div>
                 </div>
             </motion.div>

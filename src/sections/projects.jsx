@@ -28,7 +28,7 @@ export default function Projects({ id }) {
                 className="w-full pt-8">
                 <div className="flex items-center pr-8">
                     <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap">Projects</h3>
-                    <div className="h-2 rounded-full bg-red-400 w-full" />
+                    <div className="h-2 rounded-full bg-[var(--color-primary-content)] w-full" />
                 </div>
                 <div className="px-8 py-12 w-full">
                     <div className="columns-1 md:columns-2 gap-12 space-y-12">
