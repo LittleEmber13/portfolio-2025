@@ -88,7 +88,13 @@ export default function Skills({ id }) {
                         <p>I apply these technologies to build efficient, scalable, and well-designed solutions, paying close attention to both performance and user experience. My skills go beyond tools, they involve writing clean code, continuously learning, and adapting to new challenges.</p>
                         <br />
                         <p className="mb-[16px]">If these technologies align with what you’re looking for, I’d be excited to collaborate on new projects.</p>
-                        <button>Contact me</button>
+                        <button
+                            onClick={() =>
+                                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+                            }
+                        >
+                            Contact me
+                        </button>
                     </div>
                 </div>
             </motion.div>

@@ -6,6 +6,7 @@ import flutter from "../assets/icons/flutter.png";
 import ugcdatabase from "../assets/projects/ugcdatabase.png";
 import berrly from "../assets/projects/berrly.png";
 import bovidata from "../assets/projects/bovidata.png";
+import portfolio from "../assets/projects/portfolio.png";
 import nextjs from "../assets/icons/nextjs.png";
 import javascript from "../assets/icons/javascript.png";
 import firebase from "../assets/icons/firebase.png";
@@ -59,8 +60,10 @@ export default function Projects({ id }) {
                         <Project
                             name="Porfolio"
                             openSource={true}
+                            image={portfolio}
                             description="The current portfolio. You can explore the code in more detail here"
                             technologies={[react, javascript, framerMotion, tailwind]}
+                            githubUrl={"https://github.com/LittleEmber13/portfolio-2025"}
                         />
                         <Project
                             name="UGC Database"

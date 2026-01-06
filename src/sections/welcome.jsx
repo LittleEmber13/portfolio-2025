@@ -34,32 +34,52 @@ export default function Welcome({ id }) {
                 />
             </div>
             {
-            /*
-            <div className="flex items-center gap-4 pt-16  w-full">
-                <div className="h-[2px] bg-red-400 flex-1" />
-                <div className="icon-button aspect-square w-[42px] flex items-center justify-center rounded-full">
-                    <img src={github} alt={name} className="w-1/2" />
+                /*
+                <div className="flex items-center gap-4 pt-16  w-full">
+                    <div className="h-[2px] bg-red-400 flex-1" />
+                    <div className="icon-button aspect-square w-[42px] flex items-center justify-center rounded-full">
+                        <img src={github} alt={name} className="w-1/2" />
+                    </div>
+                    <div className="icon-button aspect-square w-[42px] flex items-center justify-center rounded-full">
+                        <img src={linkedin} alt={name} className="w-1/2" />
+                    </div>
+                    <div className="icon-button aspect-square w-[42px] flex items-center justify-center rounded-full">
+                        <img src={mail} alt={name} className="w-1/2" />
+                    </div>
+                    <div className="h-[2px] bg-red-400 flex-1" />
                 </div>
-                <div className="icon-button aspect-square w-[42px] flex items-center justify-center rounded-full">
-                    <img src={linkedin} alt={name} className="w-1/2" />
-                </div>
-                <div className="icon-button aspect-square w-[42px] flex items-center justify-center rounded-full">
-                    <img src={mail} alt={name} className="w-1/2" />
-                </div>
-                <div className="h-[2px] bg-red-400 flex-1" />
-            </div>
-            */
+                */
             }
             <div className="flex justify-center p-8 pt-16 gap-4">
-                <div className="interactable w-[42px] h-[42px] flex items-center justify-center">
-                    <img src={github} alt={name} className="w-1/2 h-auto" />
-                </div>
-                <div className="interactable w-[42px] h-[42px] flex items-center justify-center">
-                    <img src={linkedin} alt={name} className="w-1/2 h-auto" />
-                </div>
-                <div className="interactable w-[42px] h-[42px] flex items-center justify-center">
-                    <img src={mail} alt={name} className="w-1/2 h-auto" />
-                </div>
+                <a
+                    href="https://github.com/LittleEmber13"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline"
+                >
+                    <div className="interactable w-[42px] h-[42px] flex items-center justify-center">
+                        <img src={github} alt={name} className="w-1/2 h-auto" />
+                    </div>
+                </a>
+                <a
+                    href="https://linkedin.com/in/daniel-d-043975201/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline"
+                >
+                    <div className="interactable w-[42px] h-[42px] flex items-center justify-center">
+                        <img src={linkedin} alt={name} className="w-1/2 h-auto" />
+                    </div>
+                </a>
+                <a
+                    href="mailto:ddur1302@gmail.com"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline"
+                >
+                    <div className="interactable w-[42px] h-[42px] flex items-center justify-center">
+                        <img src={mail} alt={name} className="w-1/2 h-auto" />
+                    </div>
+                </a>
             </div>
         </section>
     );

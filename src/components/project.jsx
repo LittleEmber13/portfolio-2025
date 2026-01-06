@@ -33,7 +33,7 @@ export default function Project({ name, description, technologies, openSource, i
                 <div className="pb-4">
                     {githubUrl && (
                         <a
-                            href="https://github.com/LittleEmber13/keepassUX"
+                            href={githubUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-blue-500 hover:underline"
