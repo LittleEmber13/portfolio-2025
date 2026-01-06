@@ -33,7 +33,7 @@ export default function Contact({ id }) {
                     <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap">Contact</h3>
                     <div className="h-2 rounded-full bg-[var(--color-primary-content)] w-full" />
                 </div>
-                <div className="flex justify-center gap-[16px] px-8 py-12">
+                <div className="flex flex-col sm:flex-row justify-center gap-[16px] px-8 py-12">
                     <div className="card align-middle !p-[16px]">
                         <h3>Get in touch</h3>
                         <p className="mt-2">Feel free to contact me for any work or suggestions below</p>
