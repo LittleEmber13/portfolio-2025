@@ -5,19 +5,31 @@ import { useInView } from "framer-motion";
 import github from "../assets/icons/github.png";
 import mail from "../assets/icons/mail.png";
 import linkedin from "../assets/icons/linkedin.png";
-
+import emailjs from "emailjs-com";
 
 export default function Contact({ id }) {
     const [email, setEmail] = useState("");
-
-    const handleEmailChange = (event) => {
-        setEmail(event.target.value);
-    };
-
     const [message, setMessage] = useState("");
 
-    const handleMessageChange = (event) => {
-        setMessage(event.target.value);
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.send(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            {
+                from_email: email,
+                message: message,
+            },
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
+            .then(() => {
+                alert("Correo enviado correctamente");
+                setEmail("");
+                setMessage("");
+            })
+            .catch(() => {
+                alert("Error al enviar el correo");
+            });
     };
 
     const ref = useRef(null);
@@ -89,25 +101,28 @@ export default function Contact({ id }) {
                             </div>
                         </div>
                     </div>
-                    <div className="card align-middle w-full !p-[16px]">
-                        <p>Email</p>
-                        <input
-                            type="text"
-                            value={email}
-                            onChange={handleEmailChange}
-                            placeholder="Your email"
-                            className="w-full"
-                        />
-                        <p className="mt-4">Message</p>
-                        <textarea
-                            type="text"
-                            value={message}
-                            onChange={handleMessageChange}
-                            placeholder="Your message"
-                            className="w-full mb-[16px]"
-                        />
-                        <button>Send Message</button>
-                    </div>
+                    <form onSubmit={sendEmail}>
+                        <div className="card align-middle w-full !p-[16px]">
+                            <p>Email</p>
+                            <input
+                                type="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                placeholder="Your email"
+                                className="w-full"
+                                required
+                            />
+                            <p className="mt-4">Message</p>
+                            <textarea
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
+                                placeholder="Your message"
+                                className="w-full mb-[16px]"
+                                required
+                            />
+                            <button>Send Message</button>
+                        </div>
+                    </form>
                 </div>
             </motion.div>
         </section>

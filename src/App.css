@@ -178,6 +178,7 @@ button:hover {
 }
 
 input[type="text"],
+input[type="email"],
 textarea {
   background-color: var(--color-primary);
   padding-left: 14px;
