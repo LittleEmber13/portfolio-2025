@@ -41,7 +41,7 @@ export default function Skills({ id }) {
                     <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap">My skills</h3>
                     <div className="h-2 rounded-full bg-[var(--color-primary-content)] w-full" />
                 </div>
-                <div className="flex flex-col md:flex-row gap-[16px] px-8 py-12">
+                <div className="flex flex-col md:flex-row gap-8 px-8 py-12">
                     <div>
                         <div className="flex flex-col md:flex-row gap-[16px] text-center">
                             <div className="card !p-[16px]">
@@ -84,17 +84,10 @@ export default function Skills({ id }) {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col w-[100%] md:w-[50%]">
+                    <div className="flex flex-col w-[100%] md:w-[50%] text-[var(--color-body-text)]">
                         <p>I apply these technologies to build efficient, scalable, and well-designed solutions, paying close attention to both performance and user experience. My skills go beyond tools, they involve writing clean code, continuously learning, and adapting to new challenges.</p>
                         <br />
                         <p className="mb-[16px]">If these technologies align with what you’re looking for, I’d be excited to collaborate on new projects.</p>
-                        <button
-                            onClick={() =>
-                                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
-                            }
-                        >
-                            Contact me
-                        </button>
                     </div>
                 </div>
             </motion.div>

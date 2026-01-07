@@ -29,7 +29,7 @@ export default function Project({ name, description, technologies, openSource, i
                     )}
                 </div>
                 <br />
-                <p>{description}</p>
+                <p className="text-[var(--color-body-text)]">{description}</p>
                 <div className="pb-4">
                     {githubUrl && (
                         <a

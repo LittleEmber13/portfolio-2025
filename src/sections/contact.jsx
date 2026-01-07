@@ -46,10 +46,10 @@ export default function Contact({ id }) {
                     <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap">Contact</h3>
                     <div className="h-2 rounded-full bg-[var(--color-primary-content)] w-full" />
                 </div>
-                <div className="flex flex-col sm:flex-row justify-center gap-[16px] px-8 py-12">
+                <div className="flex flex-col md:flex-row justify-center gap-[16px] px-8 py-12">
                     <div className="card align-middle !p-[16px]">
                         <h3>Get in touch</h3>
-                        <p className="mt-2">Feel free to contact me for any work or suggestions below</p>
+                        <p className="mt-2 text-[var(--color-body-text)]">Feel free to contact me for any work or suggestions below</p>
                         <div className="flex flex-col gap-1">
                             <a
                                 href={`mailto:${EMAIL}`}
@@ -92,8 +92,8 @@ export default function Contact({ id }) {
                             </a>
                         </div>
                     </div>
-                    <form onSubmit={sendEmail}>
-                        <div className="card align-middle w-full !p-[16px]">
+                    <div className="card align-middle w-full !p-[16px]">
+                        <form onSubmit={sendEmail}>
                             <p>Email</p>
                             <input
                                 type="email"
@@ -112,8 +112,8 @@ export default function Contact({ id }) {
                                 required
                             />
                             <button>Send Message</button>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </motion.div>
         </section >

@@ -37,9 +37,9 @@ export default function Projects({ id }) {
                         <div>
                             <h2>Projects I've worked on</h2>
                             <br />
-                            <p>Here are some of the projects I’ve worked on, including both personal and professional projects.</p>
+                            <p className="text-[var(--color-body-text)]">Here are some of the projects I’ve worked on, including both personal and professional projects.</p>
                             <br />
-                            <p>
+                            <p className="text-[var(--color-body-text)]">
                                 You can see more of my work on my{" "}
                                 <a
                                     href={GITHUB_LINK}

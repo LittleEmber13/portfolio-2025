@@ -4,12 +4,13 @@
 
 :root {
   font-family: 'Bricolage Grotesque', sans-serif;
-  background-color: rgb(65, 209, 125);
+  background-color: var(--color-primary-content);
   color: #ffffff;
   --color-primary: #151515;
   --color-primary-dark: #0d0d0d;
   --color-primary-light: #141414;
   --color-primary-content: #1e1e1e;
+  --color-body-text: #a1a3a6;
   --color-tag: #006eff;
   --color-button: #2a2f37;
 }
