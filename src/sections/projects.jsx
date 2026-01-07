@@ -30,16 +30,16 @@ export default function Projects({ id }) {
                 className="w-full pt-8">
                 <div className="flex items-center pr-8">
                     <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap">Projects</h3>
-                    <div className="h-2 rounded-full bg-[var(--color-primary-content)] w-full" />
+                    <div className="h-2 rounded-full bg-[var(--color-surface)] w-full" />
                 </div>
                 <div className="px-8 py-12 w-full">
                     <div className="columns-1 md:columns-2 gap-12 space-y-12">
                         <div>
                             <h2>Projects I've worked on</h2>
                             <br />
-                            <p className="text-[var(--color-body-text)]">Here are some of the projects I’ve worked on, including both personal and professional projects.</p>
+                            <p className="text-[var(--color-body)]">Here are some of the projects I’ve worked on, including both personal and professional projects.</p>
                             <br />
-                            <p className="text-[var(--color-body-text)]">
+                            <p className="text-[var(--color-body)]">
                                 You can see more of my work on my{" "}
                                 <a
                                     href={GITHUB_LINK}

@@ -44,12 +44,12 @@ export default function Contact({ id }) {
                 transition={{ duration: 0.8, ease: "easeOut" }}>
                 <div className="flex items-center pr-8">
                     <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap">Contact</h3>
-                    <div className="h-2 rounded-full bg-[var(--color-primary-content)] w-full" />
+                    <div className="h-2 rounded-full bg-[var(--color-surface)] w-full" />
                 </div>
                 <div className="flex flex-col md:flex-row justify-center gap-[16px] px-8 py-12">
                     <div className="card align-middle !p-[16px]">
                         <h3>Get in touch</h3>
-                        <p className="mt-2 text-[var(--color-body-text)]">Feel free to contact me for any work or suggestions below</p>
+                        <p className="mt-2 text-[var(--color-body)]">Feel free to contact me for any work or suggestions below</p>
                         <div className="flex flex-col gap-1">
                             <a
                                 href={`mailto:${EMAIL}`}

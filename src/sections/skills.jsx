@@ -39,7 +39,7 @@ export default function Skills({ id }) {
                 transition={{ duration: 0.8, ease: "easeOut" }} >
                 <div className="flex items-center pr-8">
                     <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap">My skills</h3>
-                    <div className="h-2 rounded-full bg-[var(--color-primary-content)] w-full" />
+                    <div className="h-2 rounded-full bg-[var(--color-surface)] w-full" />
                 </div>
                 <div className="flex flex-col md:flex-row gap-8 px-8 py-12">
                     <div>
@@ -84,7 +84,7 @@ export default function Skills({ id }) {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col w-[100%] md:w-[50%] text-[var(--color-body-text)]">
+                    <div className="flex flex-col w-[100%] md:w-[50%] text-[var(--color-body)]">
                         <p>I apply these technologies to build efficient, scalable, and well-designed solutions, paying close attention to both performance and user experience. My skills go beyond tools, they involve writing clean code, continuously learning, and adapting to new challenges.</p>
                         <br />
                         <p className="mb-[16px]">If these technologies align with what you’re looking for, I’d be excited to collaborate on new projects.</p>

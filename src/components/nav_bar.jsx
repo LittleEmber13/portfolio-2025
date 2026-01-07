@@ -19,7 +19,7 @@ export default function NavBar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="flex bg-[var(--color-primary-content)] p-2 gap-4 rounded-full px-8 fixed z-10 mt-4"
+            className="flex bg-[var(--color-surface)] p-2 gap-4 rounded-full px-8 fixed z-10 mt-4"
         >
             <a href="#welcome" className="cursor-pointer">Welcome</a>
             <a href="#projects" className="cursor-pointer">Projects</a>
