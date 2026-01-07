@@ -1,5 +1,5 @@
 {
-  "homepage":"http://LittleEmber13.github.io/portfolio-2025",
+  "homepage": "http://littleember13.github.io/portfolio-2025",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
