@@ -67,4 +67,8 @@
         "open_source": "Open Source",
         "proprietary": "Proprietary"
     }
+    ,
+    "footer": {
+        "copyright": "© {{year}} All rights reserved."
+    }
 }

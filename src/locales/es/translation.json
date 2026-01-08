@@ -68,4 +68,8 @@
     "open_source": "Código abierto",
     "proprietary": "Propietario"
   }
+  ,
+  "footer": {
+    "copyright": "© {{year}} Todos los derechos reservados."
+  }
 }

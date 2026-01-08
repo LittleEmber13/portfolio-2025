@@ -1,5 +1,6 @@
 import { StarsBackground } from './components/animate-ui/components/backgrounds/stars';
 import NavBar from './components/nav_bar';
+import Footer from './components/footer';
 import Contact from './sections/contact';
 import Projects from './sections/projects';
 import Skills from './sections/skills';
@@ -22,6 +23,7 @@ function App() {
             <Skills id='skills' />
             <Contact id='contact' />
           </div>
+          <Footer />
         </div>
       </div>
     </>
