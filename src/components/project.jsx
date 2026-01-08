@@ -1,8 +1,10 @@
 import prefab from "../assets/prefab.jpg";
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 import github from "../assets/icons/github.png";
 
 export default function Project({ name, description, technologies, openSource, image, githubUrl }) {
+    const { t } = useTranslation();
     return (
         <motion.div className="flex flex-col w-full text-start !p-0 card break-inside-avoid mb-12"
             initial={{ scale: 1 }}
@@ -20,11 +22,11 @@ export default function Project({ name, description, technologies, openSource, i
                     <h4 className="pr-4">{name}</h4>
                     {openSource == true ? (
                         <div className="inline-flex items-center gap-2 rounded-full border border-green-400 px-2 text-xs font-medium text-green-400">
-                            <span>Open Source</span>
+                            <span>{t('project.open_source')}</span>
                         </div>
                     ) : (
                         <div className="inline-flex items-center gap-2 rounded-full border border-orange-400 px-2 text-xs font-medium text-orange-400">
-                            <span>Propietary</span>
+                            <span>{t('project.proprietary')}</span>
                         </div>
                     )}
                 </div>
@@ -38,7 +40,7 @@ export default function Project({ name, description, technologies, openSource, i
                             rel="noopener noreferrer"
                             className="text-blue-500 hover:underline"
                         >
-                            Source code
+                            {t('projects.source_code')}
                         </a>
                     )}
                 </div>

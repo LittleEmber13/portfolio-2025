@@ -1,0 +1,70 @@
+{
+    "nav": {
+        "welcome": "Welcome",
+        "projects": "Projects",
+        "skills": "Skills",
+        "contact": "Contact",
+        "language": "Language"
+    },
+    "welcome": {
+        "greeting": "Hi, I'm Daniel",
+        "title": "Software developer",
+        "p1": "I have 3 years of experience in mobile development with Flutter, having participated in several projects that have helped me grow significantly as a developer, learning to write better code and solve real-world problems.",
+        "p2": "I enjoy writing clean, scalable, and easy to maintain code."
+    },
+    "projects": {
+        "heading": "Projects",
+        "subheading": "Projects I've worked on",
+        "description": "Here are some of the projects I’ve worked on, including both personal and professional projects.",
+        "see_more": "You can see more of my work on my",
+        "github": "GitHub",
+        "source_code": "Source code",
+        "items": {
+            "keepassux": {
+                "name": "KeepassUX",
+                "description": "Password manager built using the open-source KeePass library"
+            },
+            "portfolio": {
+                "name": "Portfolio",
+                "description": "The current portfolio. You can explore the code in more detail here"
+            },
+            "ugc_database": {
+                "name": "UGC Database",
+                "description": "Platform that helps agencies find and hire content creators for advertising through advanced search and filtering."
+            },
+            "berrly": {
+                "name": "Berrly",
+                "description": "Management system for clubs, associations, and foundations, including event organization and ticket management"
+            },
+            "bovidata": {
+                "name": "Bovidata",
+                "description": "Livestock management system with features for health tracking, inventory management, expense tracking, and more"
+            }
+        }
+    },
+    "skills": {
+        "heading": "My skills",
+        "frontend": "Frontend Development",
+        "backend": "Backend & Database",
+        "other": "Other",
+        "p1": "I apply these technologies to build efficient, scalable, and well-designed solutions, paying close attention to both performance and user experience. My skills go beyond tools, they involve writing clean code, continuously learning, and adapting to new challenges.",
+        "p2": "If these technologies align with what you’re looking for, I’d be excited to collaborate on new projects."
+    },
+    "contact": {
+        "heading": "Contact",
+        "get_in_touch": "Get in touch",
+        "desc": "Feel free to contact me for any work or suggestions below",
+        "email_label": "Email",
+        "linkedin_label": "LinkedIn",
+        "github_label": "GitHub",
+        "form_email": "Your email",
+        "form_message": "Your message",
+        "form_send": "Send Message",
+        "sent_ok": "Email sent successfully",
+        "sent_err": "Error sending email"
+    },
+    "project": {
+        "open_source": "Open Source",
+        "proprietary": "Proprietary"
+    }
+}

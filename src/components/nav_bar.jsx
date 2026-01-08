@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function NavBar() {
     const [show, setShow] = useState(false);
+    const { t, i18n } = useTranslation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -21,10 +23,21 @@ export default function NavBar() {
             transition={{ duration: 0.3 }}
             className="flex bg-[var(--color-surface)] p-2 gap-4 rounded-full px-8 fixed z-10 mt-4"
         >
-            <a href="#welcome" className="cursor-pointer">Welcome</a>
-            <a href="#projects" className="cursor-pointer">Projects</a>
-            <a href="#skills" className="cursor-pointer">Skills</a>
-            <a href="#contact" className="cursor-pointer">Contact</a>
+            <a href="#welcome" className="cursor-pointer">{t('nav.welcome')}</a>
+            <a href="#projects" className="cursor-pointer">{t('nav.projects')}</a>
+            <a href="#skills" className="cursor-pointer">{t('nav.skills')}</a>
+            <a href="#contact" className="cursor-pointer">{t('nav.contact')}</a>
+            <div className="ml-2">
+                <select
+                    value={i18n.language}
+                    onChange={(e) => i18n.changeLanguage(e.target.value)}
+                    aria-label={t('nav.language') || 'Language'}
+                    className="bg-transparent text-sm p-1 rounded"
+                >
+                    <option value="en">EN</option>
+                    <option value="es">ES</option>
+                </select>
+            </div>
         </motion.div>
     ) : null;
 

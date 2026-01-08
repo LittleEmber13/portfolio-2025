@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "welcome": "Inicio",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto",
+    "language": "Idioma"
+  },
+  "welcome": {
+    "greeting": "Hola, soy Daniel",
+    "title": "Desarrollador de software",
+    "p1": "Tengo 3 años de experiencia en desarrollo móvil con Flutter, habiendo participado en varios proyectos que me han ayudado a crecer significativamente como desarrollador, aprendiendo a escribir mejor código y a resolver problemas del mundo real.",
+    "p2": "Escribo código limpio, escalable y fácil de mantener."
+  },
+  "projects": {
+    "heading": "Proyectos",
+    "subheading": "Proyectos en los que he trabajado",
+    "description": "Aquí hay algunos de los proyectos en los que he trabajado, incluyendo proyectos personales y profesionales.",
+    "see_more": "Puedes ver más sobre mi trabajo en mi",
+    "github": "GitHub",
+    "source_code": "Código fuente"
+    ,
+    "items": {
+      "keepassux": {
+        "name": "KeepassUX",
+        "description": "Gestor de contraseñas construido usando la librería de código abierto KeePass"
+      },
+      "portfolio": {
+        "name": "Portfolio",
+        "description": "El portfolio actual. Puedes explorar el código con más detalle aquí"
+      },
+      "ugc_database": {
+        "name": "UGC Database",
+        "description": "Plataforma que ayuda a agencias a encontrar y contratar creadores de contenido para publicidad mediante búsquedas y filtros avanzados."
+      },
+      "berrly": {
+        "name": "Berrly",
+        "description": "Sistema de gestión para clubes, asociaciones y fundaciones, incluyendo organización de eventos y gestión de entradas"
+      },
+      "bovidata": {
+        "name": "Bovidata",
+        "description": "Sistema de gestión ganadera con funciones para seguimiento de salud, gestión de inventario, control de gastos y más"
+      }
+    }
+  },
+  "skills": {
+    "heading": "Mis habilidades",
+    "frontend": "Desarrollo Frontend",
+    "backend": "Backend y Base de Datos",
+    "other": "Otros",
+    "p1": "Aplico estas tecnologías para construir soluciones eficientes, escalables y bien diseñadas, prestando mucha atención tanto al rendimiento como a la experiencia de usuario. Mis habilidades van más allá de las herramientas; implican escribir código limpio, aprender continuamente y adaptarme a nuevos desafíos.",
+    "p2": "Si estas tecnologías encajan con lo que estás buscando, estaría encantado de colaborar en nuevos proyectos."
+  },
+  "contact": {
+    "heading": "Contacto",
+    "get_in_touch": "Ponte en contacto",
+    "desc": "No dudes en contactarme para cualquier trabajo o sugerencia a continuación",
+    "email_label": "Correo electrónico",
+    "linkedin_label": "LinkedIn",
+    "github_label": "GitHub",
+    "form_email": "Tu correo electrónico",
+    "form_message": "Tu mensaje",
+    "form_send": "Enviar mensaje",
+    "sent_ok": "Correo enviado correctamente",
+    "sent_err": "Error al enviar el correo"
+  },
+  "project": {
+    "open_source": "Código abierto",
+    "proprietary": "Propietario"
+  }
+}

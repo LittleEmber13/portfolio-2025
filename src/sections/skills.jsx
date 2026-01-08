@@ -25,6 +25,7 @@ import framerMotion from "../assets/icons/framer-motion.webp";
 import docker from "../assets/icons/docker.svg";
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import { useTranslation } from 'react-i18next';
 import { useInView } from "framer-motion";
 
 export default function Skills({ id }) {
@@ -32,20 +33,22 @@ export default function Skills({ id }) {
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
 
+    const { t: _t } = useTranslation();
+
     return (
         <section id={id}>
             <motion.div ref={ref} initial={{ opacity: 0, y: 50 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, ease: "easeOut" }} >
                 <div className="flex items-center pr-8">
-                    <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap">My skills</h3>
+                    <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap">{_t('skills.heading')}</h3>
                     <div className="h-2 rounded-full bg-[var(--color-surface)] w-full" />
                 </div>
                 <div className="flex flex-col md:flex-row gap-8 px-8 py-12">
                     <div>
                         <div className="flex flex-col md:flex-row gap-[16px] text-center">
                             <div className="card !p-[16px]">
-                                <h5 className="mb-4">Frontend Development</h5>
+                                <h5 className="mb-4">{_t('skills.frontend')}</h5>
                                 <div className="grid grid-cols-5 md:grid-cols-3 gap-4 justify-items-center">
                                     <Skill name={"Flutter"} imgSrc={flutter} size={48} />
                                     <Skill name={"ReactJs"} imgSrc={react} size={48} />
@@ -59,7 +62,7 @@ export default function Skills({ id }) {
                                 </div>
                             </div>
                             <div className="card !p-[16px]">
-                                <h5 className="mb-4">Backend & Database</h5>
+                                <h5 className="mb-4">{_t('skills.backend')}</h5>
                                 <div className="grid grid-cols-5 md:grid-cols-3 gap-4 justify-items-center">
                                     <Skill name={"Java"} imgSrc={java} size={48} />
                                     <Skill name={"C#"} imgSrc={csharp} size={48} />
@@ -73,7 +76,7 @@ export default function Skills({ id }) {
                             </div>
                         </div>
                         <div className="card !p-[16px] my-[16px] text-center">
-                            <h5 className="mb-4">Other</h5>
+                            <h5 className="mb-4">{_t('skills.other')}</h5>
                             <div className="grid grid-cols-5 md:grid-cols-6 gap-4 justify-items-center">
                                 <Skill name={"Git"} imgSrc={git} size={48} />
                                 <Skill name={"RESTful APIs"} imgSrc={rest} size={48} />
@@ -84,10 +87,10 @@ export default function Skills({ id }) {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col w-[100%] md:w-[50%] text-[var(--color-body)]">
-                        <p>I apply these technologies to build efficient, scalable, and well-designed solutions, paying close attention to both performance and user experience. My skills go beyond tools, they involve writing clean code, continuously learning, and adapting to new challenges.</p>
+                        <div className="flex flex-col w-[100%] md:w-[50%] text-[var(--color-body)]">
+                        <p>{_t('skills.p1')}</p>
                         <br />
-                        <p className="mb-[16px]">If these technologies align with what you’re looking for, I’d be excited to collaborate on new projects.</p>
+                        <p className="mb-[16px]">{_t('skills.p2')}</p>
                     </div>
                 </div>
             </motion.div>

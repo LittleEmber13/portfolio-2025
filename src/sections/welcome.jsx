@@ -4,26 +4,25 @@ import header from "../assets/gifs/header.gif";
 import linkedin from "../assets/icons/linkedin.png";
 import TypingText from "@/components/typing_text";
 import { GITHUB_LINK, LINKEDIN_LINK, EMAIL } from '../constants.jsx';
+import { useTranslation } from 'react-i18next';
 
 export default function Welcome({ id }) {
+    const { t } = useTranslation();
     return (
         <section id={id} className="flex flex-col items-center justify-center min-h-screen">
             <div className="flex items-center gap-8 p-2 lg:pl-24">
                 <div>
                     <div className="pb-4 w-full">
-                        <TypingText text="Hi, I'm Daniel" />
-                        <h3>Software developer</h3>
+                        <TypingText text={t('welcome.greeting')} />
+                        <h3>{t('welcome.title')}</h3>
                     </div>
                     <div className="text-start pt-2">
                         <p>
-                            I have 3 years of experience in mobile development with Flutter,
-                            having participated in several projects that have helped me grow
-                            significantly as a developer, learning to write better code and
-                            solve real-world problems.
+                            {t('welcome.p1')}
                         </p>
                         <br />
                         <p>
-                            I enjoy writing clean, scalable, and easy to maintain code.
+                            {t('welcome.p2')}
                         </p>
                     </div>
 

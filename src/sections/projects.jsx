@@ -15,10 +15,13 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
 import { GITHUB_LINK } from '../constants.jsx';
+import { useTranslation } from 'react-i18next';
 
 export default function Projects({ id }) {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+    const { t } = useTranslation();
 
     return (
         <section id={id} className="w-full">
@@ -29,62 +32,62 @@ export default function Projects({ id }) {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="w-full pt-8">
                 <div className="flex items-center pr-8">
-                    <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap">Projects</h3>
+                    <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap">{t('projects.heading')}</h3>
                     <div className="h-2 rounded-full bg-[var(--color-surface)] w-full" />
                 </div>
                 <div className="px-8 py-12 w-full">
                     <div className="columns-1 md:columns-2 gap-12 space-y-12">
                         <div>
-                            <h2>Projects I've worked on</h2>
+                            <h2>{t('projects.subheading')}</h2>
                             <br />
-                            <p className="text-[var(--color-body)]">Here are some of the projects I’ve worked on, including both personal and professional projects.</p>
+                            <p className="text-[var(--color-body)]">{t('projects.description')}</p>
                             <br />
                             <p className="text-[var(--color-body)]">
-                                You can see more of my work on my{" "}
+                                 {t('projects.see_more')}{" "}
                                 <a
                                     href={GITHUB_LINK}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-blue-500 hover:underline"
                                 >
-                                    GitHub
+                                    {t('projects.github')}
                                 </a>
                             </p>
                         </div>
                         <Project
-                            name="KeepassUX"
+                            name={t('projects.items.keepassux.name')}
                             openSource={true}
-                            description="Password manager built using the open-source KeePass library"
+                            description={t('projects.items.keepassux.description')}
                             technologies={[flutter]}
                             githubUrl={"https://github.com/LittleEmber13/keepassUX"}
                         />
                         <Project
-                            name="Porfolio"
+                            name={t('projects.items.portfolio.name')}
                             openSource={true}
                             image={portfolio}
-                            description="The current portfolio. You can explore the code in more detail here"
+                            description={t('projects.items.portfolio.description')}
                             technologies={[react, javascript, framerMotion, tailwind]}
                             githubUrl={"https://github.com/LittleEmber13/portfolio-2025"}
                         />
                         <Project
-                            name="UGC Database"
+                            name={t('projects.items.ugc_database.name')}
                             openSource={false}
                             image={ugcdatabase}
-                            description="Platform that helps agencies find and hire content creators for advertising through advanced search and filtering."
+                            description={t('projects.items.ugc_database.description')}
                             technologies={[typescript, nextjs, tailwind]}
                         />
                         <Project
-                            name="Berrly"
+                            name={t('projects.items.berrly.name')}
                             openSource={false}
                             image={berrly}
-                            description="Management system for clubs, associations, and foundations, including event organization and ticket management"
+                            description={t('projects.items.berrly.description')}
                             technologies={[flutter]}
                         />
                         <Project
-                            name="Bovidata"
+                            name={t('projects.items.bovidata.name')}
                             openSource={false}
                             image={bovidata}
-                            description="Livestock management system with features for health tracking, inventory management, expense tracking, and more"
+                            description={t('projects.items.bovidata.description')}
                             technologies={[flutter, firebase]}
                         />
                     </div>
