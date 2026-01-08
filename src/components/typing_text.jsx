@@ -5,6 +5,11 @@ export default function TypingText({ text, color = "orange", size = 64, speed = 
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
+    setDisplayedText("");
+    setIndex(0);
+  }, [text]);
+
+  useEffect(() => {
     if (index < text.length) {
       const timeout = setTimeout(() => {
         setDisplayedText((prev) => prev + text.charAt(index));

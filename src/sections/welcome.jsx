@@ -9,11 +9,11 @@ import { useTranslation } from 'react-i18next';
 export default function Welcome({ id }) {
     const { t } = useTranslation();
     return (
-        <section id={id} className="flex flex-col items-center justify-center min-h-screen">
-            <div className="flex items-center gap-8 p-2 lg:pl-24">
+        <section id={id} className="flex flex-col items-start justify-center min-h-screen lg:pl-24">
+            <TypingText text={t('welcome.greeting')} />
+            <div className="flex items-center gap-8 p-2">
                 <div>
                     <div className="pb-4 w-full">
-                        <TypingText text={t('welcome.greeting')} />
                         <h3>{t('welcome.title')}</h3>
                     </div>
                     <div className="text-start pt-2">
@@ -50,7 +50,7 @@ export default function Welcome({ id }) {
                 </div>
                 */
             }
-            <div className="flex justify-center p-8 pt-16 gap-4">
+            <div className="flex justify-center pt-16 gap-4">
                 <a
                     href={GITHUB_LINK}
                     target="_blank"
