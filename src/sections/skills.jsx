@@ -41,8 +41,8 @@ export default function Skills({ id }) {
                 animate={isInView ? { opacity: 1 } : {}}
                 transition={{ duration: 0.8, ease: "easeOut" }} >
                 <div className="flex items-center pr-8">
-                    <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap">{_t('skills.heading')}</h3>
-                    <div className="h-2 rounded-full bg-[var(--color-surface)] w-full" />
+                    <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap gradient-primary-text">{'<'+_t('skills.heading')+'/>'}</h3>
+                    <div className="h-2 rounded-full gradient-section w-full" />
                 </div>
                 <div className="flex flex-col md:flex-row gap-8 px-8 py-12">
                     <motion.div initial={{ opacity: 0 }}

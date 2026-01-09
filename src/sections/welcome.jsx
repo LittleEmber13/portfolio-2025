@@ -41,25 +41,29 @@ export default function Welcome({ id }) {
                     </div>
 
                 </div>
-                <div     className="hidden lg:block w-[50%] h-auto shrink-0">
-                <motion.div initial={{ opacity: 0, }}
-                    animate={{ opacity: 1 }}
-                    transition={{
-                        duration: 1, ease: "easeOut", delay: 6
-                    }} >
-                    <img
-                        src={header}
-                        alt="gif"
-                   
-                    />
-                </motion.div>
+                <div className="hidden lg:block w-[50%] h-auto shrink-0">
+                    <motion.div initial={{ opacity: 0, }}
+                        animate={{ opacity: 1 }}
+                        transition={{
+                            duration: 1, ease: "easeOut", delay: 6
+                        }} >
+                        <img
+                            src={header}
+                            alt="gif"
+
+                        />
+                    </motion.div>
                 </div>
             </div>
             <div className="flex justify-center pt-16 gap-4">
-                <motion.div initial={{ opacity: 0, x: -25 }}
-                    animate={{ opacity: 1, x: 0 }}
+                <motion.div initial={{ opacity: 0, x: -25, scale: 1 }}
+                    animate={{ opacity: 1, x: 0, scale: 1 }}
                     transition={{
-                        duration: 0.5, ease: "easeOut", delay: 4
+                        duration: 0.5, ease: "easeOut", delay: 4, scale: 1
+                    }}
+                    whileHover={{
+                        scale: 1.1,
+                        transition: { duration: 0.1 },
                     }} >
                     <a
                         href={GITHUB_LINK}
@@ -72,11 +76,16 @@ export default function Welcome({ id }) {
                         </div>
                     </a>
                 </motion.div>
-                <motion.div initial={{ opacity: 0, x: -25 }}
-                    animate={{ opacity: 1, x: 0 }}
+                <motion.div initial={{ opacity: 0, x: -25, scale: 1 }}
+                    animate={{ opacity: 1, x: 0, scale: 1 }}
                     transition={{
-                        duration: 0.5, ease: "easeOut", delay: 4.5
-                    }} >                    <a
+                        duration: 0.5, ease: "easeOut", delay: 4.5, scale: 1
+                    }}
+                    whileHover={{
+                        scale: 1.1,
+                        transition: { duration: 0.1 },
+                    }} >
+                    <a
                         href={LINKEDIN_LINK}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -87,10 +96,14 @@ export default function Welcome({ id }) {
                         </div>
                     </a>
                 </motion.div>
-                <motion.div initial={{ opacity: 0, x: -25 }}
-                    animate={{ opacity: 1, x: 0 }}
+                <motion.div initial={{ opacity: 0, x: -25, scale: 1 }}
+                    animate={{ opacity: 1, x: 0, scale: 1 }}
                     transition={{
-                        duration: 0.5, ease: "easeOut", delay: 5
+                        duration: 0.5, ease: "easeOut", delay: 5, scale: 1
+                    }}
+                    whileHover={{
+                        scale: 1.1,
+                        transition: { duration: 0.1 },
                     }} >                    <a
                         href={`mailto:${EMAIL}`}
                         rel="noopener noreferrer"

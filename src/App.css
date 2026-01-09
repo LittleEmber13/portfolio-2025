@@ -8,9 +8,29 @@
   color: #ffffff;
   --color-background: #151515;
   --color-surface: #1e1e1e;
-  --color-button: #2a2f37;
   --color-body: #a1a3a6;
-  --color-tag: #006eff;
+  --color-primary: #00aaff;
+  --color-primary-light: #00f7ff;
+  --color-secondary: #d631ff;
+}
+
+.gradient-primary-text {
+  background: linear-gradient(135deg,
+      var(--color-secondary) 0%,
+      var(--color-primary) 90%,
+      var(--color-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-section {
+  background: linear-gradient(135deg,
+      var(--color-primary) 0%,
+      var(--color-surface) 75%,
+      var(--color-surface) 100%);
+  color: #fff;
 }
 
 h1,
@@ -92,7 +112,7 @@ html {
 }
 
 .icon-button {
-  color: var(--color-tag);
+  color: var(--color-primary);
   background-color: color-mix(in srgb, currentColor 5%, transparent);
   border: 1px solid color-mix(in srgb, currentColor 50%, transparent);
   border-radius: 50%;
@@ -100,7 +120,7 @@ html {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  transition: 
+  transition:
     background-color 0.2s ease,
     border-color 0.2s ease;
 }
@@ -111,7 +131,11 @@ html {
 }
 
 .interactable {
-  background-color: var(--color-button);
+  background: linear-gradient(135deg,
+      var(--color-primary-light) 0%,
+      var(--color-primary) 50%,
+      var(--color-primary) 100%);
+  color: #fff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -147,8 +171,12 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: var(--color-button);
   cursor: pointer;
+  background: linear-gradient(135deg,
+      var(--color-primary-light) 0%,
+      var(--color-primary) 50%,
+      var(--color-primary) 100%);
+  color: var(--color-background);
 }
 
 button:hover {

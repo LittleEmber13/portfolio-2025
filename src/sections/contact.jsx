@@ -45,8 +45,8 @@ export default function Contact({ id }) {
                 animate={isInView ? { opacity: 1 } : {}}
                 transition={{ duration: 0.8, ease: "easeOut" }}>
                 <div className="flex items-center pr-8">
-                    <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap">{t('contact.heading')}</h3>
-                    <div className="h-2 rounded-full bg-[var(--color-surface)] w-full" />
+                    <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap gradient-primary-text">{'<'+t('contact.heading')+'/>'}</h3>
+                    <div className="h-2 rounded-full gradient-section w-full" />
                 </div>
                 <motion.div ref={ref} initial={{ opacity: 0 }}
                     animate={isInView ? { opacity: 1 } : {}}
@@ -63,7 +63,7 @@ export default function Contact({ id }) {
                                         <div className="interactable w-[24px] h-[24px] mr-4">
                                             <img src={mail} className="w-1/2 h-auto object-contain" />
                                         </div>
-                                        <p className="text-blue-500 hover:underline">
+                                        <p className="text-[var(--color-primary)] hover:underline">
                                             {t('contact.email_label')}
                                         </p>
                                     </div>
@@ -77,7 +77,7 @@ export default function Contact({ id }) {
                                         <div className="interactable w-[24px] h-[24px] mr-4">
                                             <img src={linkedin} className="w-1/2 h-auto object-contain" />
                                         </div>
-                                        <p className="text-blue-500 hover:underline">
+                                        <p className="text-[var(--color-primary)] hover:underline">
                                             {t('contact.linkedin_label')}
                                         </p>
                                     </div>
@@ -90,7 +90,7 @@ export default function Contact({ id }) {
                                         <div className="interactable w-[24px] h-[24px] mr-4">
                                             <img src={github} className="w-1/2 h-auto object-contain" />
                                         </div>
-                                        <p className="text-blue-500 hover:underline">
+                                        <p className="text-[var(--color-primary)] hover:underline">
                                             {t('contact.github_label')}
                                         </p>
                                     </div>

@@ -33,8 +33,8 @@ export default function Projects({ id }) {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="w-full pt-8">
                 <div className="flex items-center pr-8">
-                    <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap">{t('projects.heading')}</h3>
-                    <div className="h-2 rounded-full bg-[var(--color-surface)] w-full" />
+                    <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap gradient-primary-text">{'<'+t('projects.heading')+'/>'}</h3>
+                    <div className="h-2 rounded-full gradient-section w-full" />
                 </div>
                 <div className="px-8 py-12 w-full">
                     <div className="columns-1 md:columns-2 gap-12 space-y-12">
@@ -60,7 +60,7 @@ export default function Projects({ id }) {
                                         href={GITHUB_LINK}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-blue-500 hover:underline"
+                                        className="text-[var(--color-primary)] hover:underline"
                                     >
                                         {t('projects.github')}
                                     </a>
