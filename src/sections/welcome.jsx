@@ -5,6 +5,7 @@ import linkedin from "../assets/icons/linkedin.png";
 import TypingText from "@/components/typing_text";
 import { GITHUB_LINK, LINKEDIN_LINK, EMAIL } from '../constants.jsx';
 import { useTranslation } from 'react-i18next';
+import { motion } from "framer-motion";
 
 export default function Welcome({ id }) {
     const { t } = useTranslation();
@@ -14,72 +15,92 @@ export default function Welcome({ id }) {
             <div className="flex items-center gap-8 p-2">
                 <div>
                     <div className="pb-4 w-full">
-                        <h3>{t('welcome.title')}</h3>
+                        <motion.div initial={{ opacity: 0, y: -25 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 1, ease: "easeOut", delay: 2
+                            }} >
+                            <h3>{t('welcome.title')}</h3>
+                        </motion.div>
                     </div>
                     <div className="text-start pt-2">
-                        <p>
-                            {t('welcome.p1')}
-                        </p>
-                        <br />
-                        <p>
-                            {t('welcome.p2')}
-                        </p>
+                        <motion.div initial={{ opacity: 0, y: -25 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 1, ease: "easeOut", delay: 3
+                            }} >
+                            <p>
+                                {t('welcome.p1')}
+                            </p>
+                            <br />
+                            <p>
+                                {t('welcome.p2')}
+                            </p>
+                        </motion.div>
+
                     </div>
 
                 </div>
-                <img
-                    src={header}
-                    alt="gif"
-                    className="hidden lg:block w-[50%] h-auto shrink-0"
-                />
-            </div>
-            {
-                /*
-                <div className="flex items-center gap-4 pt-16  w-full">
-                    <div className="h-[2px] bg-red-400 flex-1" />
-                    <div className="icon-button aspect-square w-[42px] flex items-center justify-center rounded-full">
-                        <img src={github} alt={name} className="w-1/2" />
-                    </div>
-                    <div className="icon-button aspect-square w-[42px] flex items-center justify-center rounded-full">
-                        <img src={linkedin} alt={name} className="w-1/2" />
-                    </div>
-                    <div className="icon-button aspect-square w-[42px] flex items-center justify-center rounded-full">
-                        <img src={mail} alt={name} className="w-1/2" />
-                    </div>
-                    <div className="h-[2px] bg-red-400 flex-1" />
+                <div     className="hidden lg:block w-[50%] h-auto shrink-0">
+                <motion.div initial={{ opacity: 0, }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                        duration: 1, ease: "easeOut", delay: 6
+                    }} >
+                    <img
+                        src={header}
+                        alt="gif"
+                   
+                    />
+                </motion.div>
                 </div>
-                */
-            }
+            </div>
             <div className="flex justify-center pt-16 gap-4">
-                <a
-                    href={GITHUB_LINK}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:underline"
-                >
-                    <div className="interactable w-[42px] h-[42px] flex items-center justify-center">
-                        <img src={github} alt={name} className="w-1/2 h-auto" />
-                    </div>
-                </a>
-                <a
-                    href={LINKEDIN_LINK}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:underline"
-                >
-                    <div className="interactable w-[42px] h-[42px] flex items-center justify-center">
-                        <img src={linkedin} alt={name} className="w-1/2 h-auto" />
-                    </div>
-                </a>
-                <a
-                    href={`mailto:${EMAIL}`}
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:underline"
-                >
-                    <div className="interactable w-[42px] h-[42px] flex items-center justify-center">
-                        <img src={mail} alt={name} className="w-1/2 h-auto" />
-                    </div>
-                </a>
+                <motion.div initial={{ opacity: 0, x: -25 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{
+                        duration: 0.5, ease: "easeOut", delay: 4
+                    }} >
+                    <a
+                        href={GITHUB_LINK}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-500 hover:underline"
+                    >
+                        <div className="interactable w-[42px] h-[42px] flex items-center justify-center">
+                            <img src={github} alt={name} className="w-1/2 h-auto" />
+                        </div>
+                    </a>
+                </motion.div>
+                <motion.div initial={{ opacity: 0, x: -25 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{
+                        duration: 0.5, ease: "easeOut", delay: 4.5
+                    }} >                    <a
+                        href={LINKEDIN_LINK}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-500 hover:underline"
+                    >
+                        <div className="interactable w-[42px] h-[42px] flex items-center justify-center">
+                            <img src={linkedin} alt={name} className="w-1/2 h-auto" />
+                        </div>
+                    </a>
+                </motion.div>
+                <motion.div initial={{ opacity: 0, x: -25 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{
+                        duration: 0.5, ease: "easeOut", delay: 5
+                    }} >                    <a
+                        href={`mailto:${EMAIL}`}
+                        rel="noopener noreferrer"
+                        className="text-blue-500 hover:underline"
+                    >
+                        <div className="interactable w-[42px] h-[42px] flex items-center justify-center">
+                            <img src={mail} alt={name} className="w-1/2 h-auto" />
+                        </div>
+                    </a>
+                </motion.div>
             </div>
         </section>
     );

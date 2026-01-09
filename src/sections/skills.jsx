@@ -37,60 +37,72 @@ export default function Skills({ id }) {
 
     return (
         <section id={id}>
-            <motion.div ref={ref} initial={{ opacity: 0, y: 50 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
+            <motion.div ref={ref} initial={{ opacity: 0 }}
+                animate={isInView ? { opacity: 1 } : {}}
                 transition={{ duration: 0.8, ease: "easeOut" }} >
                 <div className="flex items-center pr-8">
                     <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap">{_t('skills.heading')}</h3>
                     <div className="h-2 rounded-full bg-[var(--color-surface)] w-full" />
                 </div>
                 <div className="flex flex-col md:flex-row gap-8 px-8 py-12">
-                    <div>
-                        <div className="flex flex-col md:flex-row gap-[16px] text-center">
-                            <div className="card !p-[16px]">
-                                <h5 className="mb-4">{_t('skills.frontend')}</h5>
-                                <div className="grid grid-cols-5 md:grid-cols-3 gap-4 justify-items-center">
-                                    <Skill name={"Flutter"} imgSrc={flutter} size={48} />
-                                    <Skill name={"ReactJs"} imgSrc={react} size={48} />
-                                    <Skill name={"Next.js"} imgSrc={nextjs} size={48} />
-                                    <Skill name={"Typescript"} imgSrc={typescript} size={48} />
-                                    <Skill name={"Javascript"} imgSrc={javascript} size={48} />
-                                    <Skill name={"CSS3"} imgSrc={css} size={48} />
-                                    <Skill name={"HTML5"} imgSrc={html} size={48} />
-                                    <Skill name={"Tailwind CSS"} imgSrc={tailwind} size={48} />
-                                    <Skill name={"Framer Motion"} imgSrc={framerMotion} size={48} />
+                    <motion.div initial={{ opacity: 0 }}
+                        animate={isInView ? { opacity: 1 } : {}}
+                        transition={{
+                            duration: 1, ease: "easeOut", delay: 0.5
+                        }} >
+                        <div>
+                            <div className="flex flex-col md:flex-row gap-[16px] text-center">
+                                <div className="card !p-[16px]">
+                                    <h5 className="mb-4">{_t('skills.frontend')}</h5>
+                                    <div className="grid grid-cols-5 md:grid-cols-3 gap-4 justify-items-center">
+                                        <Skill name={"Flutter"} imgSrc={flutter} size={48} />
+                                        <Skill name={"ReactJs"} imgSrc={react} size={48} />
+                                        <Skill name={"Next.js"} imgSrc={nextjs} size={48} />
+                                        <Skill name={"Typescript"} imgSrc={typescript} size={48} />
+                                        <Skill name={"Javascript"} imgSrc={javascript} size={48} />
+                                        <Skill name={"CSS3"} imgSrc={css} size={48} />
+                                        <Skill name={"HTML5"} imgSrc={html} size={48} />
+                                        <Skill name={"Tailwind CSS"} imgSrc={tailwind} size={48} />
+                                        <Skill name={"Framer Motion"} imgSrc={framerMotion} size={48} />
+                                    </div>
+                                </div>
+                                <div className="card !p-[16px]">
+                                    <h5 className="mb-4">{_t('skills.backend')}</h5>
+                                    <div className="grid grid-cols-5 md:grid-cols-3 gap-4 justify-items-center">
+                                        <Skill name={"Java"} imgSrc={java} size={48} />
+                                        <Skill name={"C#"} imgSrc={csharp} size={48} />
+                                        <Skill name={"Python"} imgSrc={python} size={48} />
+                                        <Skill name={"Prisma"} imgSrc={prisma} size={48} />
+                                        <Skill name={"Symfony"} imgSrc={symfony} size={48} />
+                                        <Skill name={"MariaDB"} imgSrc={mariadb} size={48} />
+                                        <Skill name={"MySQL"} imgSrc={mysql} size={48} />
+                                        <Skill name={"MongoDB"} imgSrc={mongodb} size={48} />
+                                    </div>
                                 </div>
                             </div>
-                            <div className="card !p-[16px]">
-                                <h5 className="mb-4">{_t('skills.backend')}</h5>
-                                <div className="grid grid-cols-5 md:grid-cols-3 gap-4 justify-items-center">
-                                    <Skill name={"Java"} imgSrc={java} size={48} />
-                                    <Skill name={"C#"} imgSrc={csharp} size={48} />
-                                    <Skill name={"Python"} imgSrc={python} size={48} />
-                                    <Skill name={"Prisma"} imgSrc={prisma} size={48} />
-                                    <Skill name={"Symfony"} imgSrc={symfony} size={48} />
-                                    <Skill name={"MariaDB"} imgSrc={mariadb} size={48} />
-                                    <Skill name={"MySQL"} imgSrc={mysql} size={48} />
-                                    <Skill name={"MongoDB"} imgSrc={mongodb} size={48} />
+                            <div className="card !p-[16px] my-[16px] text-center">
+                                <h5 className="mb-4">{_t('skills.other')}</h5>
+                                <div className="grid grid-cols-5 md:grid-cols-6 gap-4 justify-items-center">
+                                    <Skill name={"Git"} imgSrc={git} size={48} />
+                                    <Skill name={"RESTful APIs"} imgSrc={rest} size={48} />
+                                    <Skill name={"Firebase"} imgSrc={firebase} size={48} />
+                                    <Skill name={"Responsive Design"} imgSrc={responsive} size={48} />
+                                    <Skill name={"Figma"} imgSrc={figma} size={48} />
+                                    <Skill name={"Docker"} imgSrc={docker} size={48} />
                                 </div>
                             </div>
                         </div>
-                        <div className="card !p-[16px] my-[16px] text-center">
-                            <h5 className="mb-4">{_t('skills.other')}</h5>
-                            <div className="grid grid-cols-5 md:grid-cols-6 gap-4 justify-items-center">
-                                <Skill name={"Git"} imgSrc={git} size={48} />
-                                <Skill name={"RESTful APIs"} imgSrc={rest} size={48} />
-                                <Skill name={"Firebase"} imgSrc={firebase} size={48} />
-                                <Skill name={"Responsive Design"} imgSrc={responsive} size={48} />
-                                <Skill name={"Figma"} imgSrc={figma} size={48} />
-                                <Skill name={"Docker"} imgSrc={docker} size={48} />
-                            </div>
-                        </div>
-                    </div>
-                        <div className="flex flex-col w-[100%] md:w-[50%] text-[var(--color-body)]">
-                        <p>{_t('skills.p1')}</p>
-                        <br />
-                        <p className="mb-[16px]">{_t('skills.p2')}</p>
+                    </motion.div>
+                    <div className="flex flex-col w-[100%] md:w-[50%] pt-0 md:pt-6 text-[var(--color-body)]">
+                        <motion.div initial={{ opacity: 0, y: -25 }}
+                            animate={isInView ? { opacity: 1 } : {}}
+                            transition={{
+                                duration: 1, ease: "easeOut", delay: 1
+                            }} >
+                            <p>{_t('skills.p1')}</p>
+                            <br />
+                            <p>{_t('skills.p2')}</p>
+                        </motion.div>
                     </div>
                 </div>
             </motion.div>
