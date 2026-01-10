@@ -43,7 +43,7 @@
         }
     },
     "skills": {
-        "heading": "My skills",
+        "heading": "Skills",
         "frontend": "Frontend Development",
         "backend": "Backend & Database",
         "other": "Other",

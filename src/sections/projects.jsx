@@ -17,6 +17,7 @@ import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
 import { GITHUB_LINK } from '../constants.jsx';
 import { useTranslation } from 'react-i18next';
+import SectionHeader from "../components/section_header";
 
 export default function Projects({ id }) {
     const ref = useRef(null);
@@ -32,11 +33,8 @@ export default function Projects({ id }) {
                 animate={isInView ? { opacity: 1 } : {}}
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="w-full pt-8">
-                <div className="flex items-center pr-8">
-                    <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap gradient-primary-text">{'<'+t('projects.heading')+'/>'}</h3>
-                    <div className="h-2 rounded-full gradient-section w-full" />
-                </div>
-                <div className="px-8 py-12 w-full">
+                <SectionHeader title={'<' + t('projects.heading') + '/>'} />
+                <div className="solid-background p-8 w-full">
                     <div className="columns-1 md:columns-2 gap-12 space-y-12">
                         <div>
                             <motion.div initial={{ opacity: 0 }}

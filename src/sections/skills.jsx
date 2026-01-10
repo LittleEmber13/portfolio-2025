@@ -27,6 +27,7 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useTranslation } from 'react-i18next';
 import { useInView } from "framer-motion";
+import SectionHeader from "../components/section_header";
 
 export default function Skills({ id }) {
     const ref = useRef(null);
@@ -40,11 +41,8 @@ export default function Skills({ id }) {
             <motion.div ref={ref} initial={{ opacity: 0 }}
                 animate={isInView ? { opacity: 1 } : {}}
                 transition={{ duration: 0.8, ease: "easeOut" }} >
-                <div className="flex items-center pr-8">
-                    <h3 className="p-2 pl-8 pr-8  max-w-[70%] whitespace-nowrap gradient-primary-text">{'<'+_t('skills.heading')+'/>'}</h3>
-                    <div className="h-2 rounded-full gradient-section w-full" />
-                </div>
-                <div className="flex flex-col md:flex-row gap-8 px-8 py-12">
+                <SectionHeader title={'<' + _t('skills.heading') + '/>'} />
+                <div className="solid-background flex flex-col md:flex-row gap-8 p-8">
                     <motion.div initial={{ opacity: 0 }}
                         animate={isInView ? { opacity: 1 } : {}}
                         transition={{
@@ -80,7 +78,7 @@ export default function Skills({ id }) {
                                     </div>
                                 </div>
                             </div>
-                            <div className="card !p-[16px] my-[16px] text-center">
+                            <div className="card !p-[16px] mt-[16px] text-center">
                                 <h5 className="mb-4">{_t('skills.other')}</h5>
                                 <div className="grid grid-cols-5 md:grid-cols-6 gap-4 justify-items-center">
                                     <Skill name={"Git"} imgSrc={git} size={48} />
@@ -93,7 +91,7 @@ export default function Skills({ id }) {
                             </div>
                         </div>
                     </motion.div>
-                    <div className="flex flex-col w-[100%] md:w-[50%] pt-0 md:pt-6 text-[var(--color-body)]">
+                    <div className="flex flex-col w-[100%] md:w-[50%] md:pt-6 text-[var(--color-body)]">
                         <motion.div initial={{ opacity: 0, y: -25 }}
                             animate={isInView ? { opacity: 1 } : {}}
                             transition={{

@@ -14,17 +14,22 @@ function App() {
         starColor='#ffffff63'
         className="fixed -z-10"
       />
-      <div className='w-full justify-items-center'>
-        <NavBar />
-        <div className="justify-items-center max-w-[1200px] px-8">
-          <Welcome id='welcome' />
-          <div className="solid-background">
+      <div className='w-full flex justify-center items-center flex-col'>
+        <div className="max-w-[1500px] px-0 sm:px-8 md:px-16">
+          <div className='w-full flex items-center flex-col'>
+            <NavBar />
+          </div>
+          <div className="flex flex-col">
+            <Welcome id='welcome' />
+          </div>
+          <div className="flex flex-col gap-16">
             <Projects id='projects' />
             <Skills id='skills' />
             <Contact id='contact' />
+            <Footer />
           </div>
-          <Footer />
         </div>
+
       </div>
     </>
   )

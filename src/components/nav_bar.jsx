@@ -22,7 +22,7 @@ export default function NavBar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="hidden md:flex bg-[var(--color-surface)] p-2 gap-4 rounded-full px-8 fixed z-10 mt-4"
+            className="nav-bar hidden md:flex p-2 gap-4 !rounded-full px-8 fixed z-10 mt-4"
         >
             <a href="#welcome" className="cursor-pointer">{t('nav.welcome')}</a>
             <a href="#projects" className="cursor-pointer">{t('nav.projects')}</a>
@@ -64,7 +64,7 @@ export default function NavBar() {
                 ref={btnRef}
                 aria-label="Toggle menu"
                 onClick={() => setIsOpen(prev => !prev)}
-                className="md:hidden fixed top-4 left-4 z-30 bg-[var(--color-surface)] p-2 rounded-full shadow"
+                className="md:hidden fixed top-4 left-4 z-30 bg-[var(--color-surface)] p-2 rounded-full shadow nav-bar"
             >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
