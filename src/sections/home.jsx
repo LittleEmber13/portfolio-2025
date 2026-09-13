@@ -82,9 +82,8 @@ export default function Home({ id }) {
                 initial={{ opacity: 0 }}
                 animate={isInView ? { opacity: 1 } : {}}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="pt-8"
             >
-                <SectionHeader title={'<' + t('home.heading') + '/>'} />
+                <SectionHeader title={t('home.heading')} />
                 <div className="solid-background p-8 w-full">
                     <div className="grid grid-cols-12 gap-4">
                         <motion.div

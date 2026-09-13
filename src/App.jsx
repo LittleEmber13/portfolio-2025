@@ -29,7 +29,7 @@ function ScrollToHash() {
 
 function HomePage() {
   return (
-      <div className="flex flex-col gap-16 pt-16">
+      <div className="flex flex-col gap-4 pt-16">
         <Home id='home' />
         <Projects id='projects' />
         <Skills id='skills' />

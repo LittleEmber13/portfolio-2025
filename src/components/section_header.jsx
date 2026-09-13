@@ -1,8 +1,8 @@
 export default function SectionHeader({ title, className }) {
   return (
-    <div className={`flex items-center gap-4 pb-8 ${className ?? ""} px-8 sm:px-0`}>
+    <div className={`flex items-center gap-4 pb-4 ${className ?? ""} px-8 sm:px-0`}>
       <div className="solid-background p-4">
-        <h3 className="whitespace-nowrap gradient-primary-text">
+        <h3 className="whitespace-nowrap">
           {title}
         </h3>
       </div>

@@ -20,8 +20,8 @@ export default function Projects({ id }) {
                 initial={{ opacity: 0 }}
                 animate={isInView ? { opacity: 1 } : {}}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="w-full pt-8">
-                <SectionHeader title={'<' + t('projects.heading') + '/>'} />
+                className="w-full">
+                <SectionHeader title={t('projects.heading')} />
                 <div className="solid-background p-8 w-full">
                     <div className="columns-1 md:columns-2 gap-4">
                         <motion.div

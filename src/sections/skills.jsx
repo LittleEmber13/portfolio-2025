@@ -41,7 +41,7 @@ export default function Skills({ id }) {
             <motion.div ref={ref} initial={{ opacity: 0 }}
                 animate={isInView ? { opacity: 1 } : {}}
                 transition={{ duration: 0.8, ease: "easeOut" }} >
-                <SectionHeader title={'<' + _t('skills.heading') + '/>'} />
+                <SectionHeader title={_t('skills.heading')} />
                 <div className="solid-background flex flex-col md:flex-row gap-4 p-8">
                     <div className="flex flex-col w-full gap-4">
                         <div className="flex flex-col md:flex-row gap-4 text-center">

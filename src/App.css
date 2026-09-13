@@ -29,7 +29,7 @@
 
 .gradient-section {
   background: linear-gradient(135deg,
-      var(--color-primary) 0%,
+      #ffffff 0%,
       var(--color-surface) 75%,
       var(--color-surface) 100%);
   color: #fff;

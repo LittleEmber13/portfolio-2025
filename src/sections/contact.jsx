@@ -47,7 +47,7 @@ export default function Contact({ id }) {
                 animate={isInView ? { opacity: 1 } : {}}
                 transition={{ duration: 0.8, ease: "easeOut" }}
             >
-                <SectionHeader title={'<' + t('contact.heading') + '/>'} />
+                <SectionHeader title={t('contact.heading')} />
                 <div className="solid-background p-8 w-full">
                     <div className="flex flex-col md:flex-row justify-center gap-4">
                         <motion.div
