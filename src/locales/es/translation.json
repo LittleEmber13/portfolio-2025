@@ -2,6 +2,7 @@
   "nav": {
     "welcome": "Inicio",
     "projects": "Proyectos",
+    "experience": "Experiencia",
     "skills": "Habilidades",
     "contact": "Contacto",
     "language": "Idioma"
@@ -119,6 +120,60 @@
     "overview": "Resumen",
     "features": "Características principales",
     "visit_website": "Visitar sitio web"
+  },
+  "experience": {
+    "heading": "Experiencia",
+    "current": "Actualidad",
+    "active": "Activo",
+    "types": {
+      "work": "Trabajo",
+      "education": "Educación",
+      "openSource": "Código abierto"
+    },
+    "items": {
+      "design": {
+        "role": "Grado Superior en Diseño Gráfico",
+        "company": "EA Serra i Abella",
+        "start": "Sep 2017",
+        "end": "Jun 2019",
+        "description": "Ciclo superior de diseño gráfico donde desarrollé mis habilidades visuales y creativas — tipografía, maquetación, branding e ilustración digital — que sigo aplicando hoy en día en el diseño de interfaces."
+      },
+      "dam": {
+        "role": "Grado Superior en Desarrollo de Aplicaciones Multiplataforma",
+        "company": "Institut Provençana",
+        "start": "Sep 2020",
+        "end": "Jun 2022",
+        "description": "Ciclo formativo de dos años donde construí una base sólida en programación, bases de datos, diseño de software y desarrollo móvil."
+      },
+      "magnetapps": {
+        "role": "Desarrollador Móvil y Web",
+        "company": "MagnetApps",
+        "start": "Jul 2022",
+        "end": "Feb 2026",
+        "description": "Desarrollé y mantuve apps Android/iOS con Flutter (BLoC, Cubit, Stacked), APIs REST con Firebase y aplicaciones web con Next.js y Symfony, siguiendo metodologías ágiles, pruebas unitarias y código limpio."
+      },
+      "opensource": {
+        "role": "Desarrollador Open Source",
+        "company": "Comunidad Open Source",
+        "start": "Feb 2026",
+        "end": "",
+        "description": "Construyo y mantengo proyectos de código abierto como KeepassUX, un gestor de contraseñas en Flutter sobre el ecosistema KeePass, centrándome en código limpio, documentación y contribuciones a la comunidad."
+      },
+      "tuulapp": {
+        "role": "Desarrollador Móvil",
+        "company": "TuulApp",
+        "start": "Jul 2026",
+        "end": "Ago 2026",
+        "description": "Proyecto temporal construyendo una app para gestionar contratos laborales temporales, cubriendo el flujo completo desde el alta hasta la gestión del contrato."
+      },
+      "verisure": {
+        "role": "Operador CRA",
+        "company": "Verisure",
+        "start": "Jul 2026",
+        "end": "",
+        "description": "Monitorizo y respondo a alarmas en una sala de control, gestionando incidentes críticos con una toma de decisiones rápida y precisa, manteniendo la calma bajo presión."
+      }
+    }
   },
   "skills": {
     "heading": "Habilidades",

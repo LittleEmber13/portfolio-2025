@@ -6,6 +6,7 @@ import Footer from './components/footer';
 import Contact from './sections/contact';
 import Home from './sections/home';
 import Projects from './sections/projects';
+import Experience from './sections/experience';
 import Skills from './sections/skills';
 import ProjectDetail from './pages/project_detail';
 import Policy from './pages/policy';
@@ -32,6 +33,7 @@ function HomePage() {
       <div className="flex flex-col gap-4 pt-16">
         <Home id='home' />
         <Projects id='projects' />
+        <Experience id='experience' />
         <Skills id='skills' />
         <Contact id='contact' />
       </div>

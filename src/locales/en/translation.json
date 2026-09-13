@@ -2,6 +2,7 @@
     "nav": {
         "welcome": "Welcome",
         "projects": "Projects",
+        "experience": "Experience",
         "skills": "Skills",
         "contact": "Contact",
         "language": "Language"
@@ -118,6 +119,60 @@
         "overview": "Overview",
         "features": "Key features",
         "visit_website": "Visit website"
+    },
+    "experience": {
+        "heading": "Experience",
+        "current": "Present",
+        "active": "Active",
+        "types": {
+            "work": "Work",
+            "education": "Education",
+            "openSource": "Open Source"
+        },
+        "items": {
+            "design": {
+                "role": "Higher Degree in Graphic Design",
+                "company": "EA Serra i Abella",
+                "start": "Sep 2017",
+                "end": "Jun 2019",
+                "description": "Higher education cycle in graphic design where I developed my visual and creative skills — typography, layout, branding, and digital illustration — which I still apply today in interface design."
+            },
+            "dam": {
+                "role": "Higher Degree in Multiplatform Application Development",
+                "company": "Institut Provençana",
+                "start": "Sep 2020",
+                "end": "Jun 2022",
+                "description": "Two-year higher education cycle where I built solid foundations in programming, databases, software design, and mobile development."
+            },
+            "magnetapps": {
+                "role": "Mobile & Web Developer",
+                "company": "MagnetApps",
+                "start": "Jul 2022",
+                "end": "Feb 2026",
+                "description": "Built and maintained Android/iOS apps with Flutter (BLoC, Cubit, Stacked), REST APIs with Firebase, and web apps with Next.js and Symfony, following agile methodologies, unit testing, and clean code practices."
+            },
+            "opensource": {
+                "role": "Open Source Developer",
+                "company": "Open Source Community",
+                "start": "Feb 2026",
+                "end": "",
+                "description": "Building and maintaining open source projects such as KeepassUX, a Flutter password manager built on the KeePass ecosystem, focusing on clean code, documentation, and community contributions."
+            },
+            "tuulapp": {
+                "role": "Mobile Developer",
+                "company": "TuulApp",
+                "start": "Jul 2026",
+                "end": "Aug 2026",
+                "description": "Temporary project building an app to manage temporary employment contracts, handling the full workflow from onboarding to contract management."
+            },
+            "verisure": {
+                "role": "CRA Operator",
+                "company": "Verisure",
+                "start": "Jul 2026",
+                "end": "",
+                "description": "Monitoring and responding to alarms in a control room, handling critical incidents with fast and precise decision-making while keeping calm under pressure."
+            }
+        }
     },
     "skills": {
         "heading": "Skills",
