@@ -52,7 +52,7 @@ function App() {
       />
       <ScrollToHash />
       <div className='w-full flex justify-center items-center flex-col'>
-        <div className="max-w-[1500px] px-0 sm:px-8 md:px-16">
+        <div className="max-w-[1875px] px-0 sm:px-8 md:px-16">
           <div className='w-full flex items-center flex-col'>
             {!isPrivacy && <NavBar />}
           </div>

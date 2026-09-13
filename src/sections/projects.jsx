@@ -23,7 +23,7 @@ export default function Projects({ id }) {
                 className="w-full">
                 <SectionHeader title={t('projects.heading')} />
                 <div className="solid-background p-8 w-full">
-                    <div className="columns-1 md:columns-2 gap-4">
+                    <div className="columns-1 md:columns-2 xl:columns-3 gap-4">
                         <motion.div
                             initial={{ opacity: 0, y: -25 }}
                             animate={isInView ? { opacity: 1, y: 0 } : {}}
