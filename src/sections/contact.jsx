@@ -49,8 +49,13 @@ export default function Contact({ id }) {
             >
                 <SectionHeader title={'<' + t('contact.heading') + '/>'} />
                 <div className="solid-background p-8 w-full">
-                    <div className="flex flex-col md:flex-row justify-center gap-[16px]">
-                        <div className="card !p-[16px]">
+                    <div className="flex flex-col md:flex-row justify-center gap-4">
+                        <motion.div
+                            className="card !p-6"
+                            initial={{ opacity: 0, y: -25 }}
+                            animate={isInView ? { opacity: 1, y: 0 } : {}}
+                            transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+                        >
                             <h3>{t('contact.get_in_touch')}</h3>
                             <p className="mt-2 text-[var(--color-body)]">{t('contact.desc')}</p>
                             <div className="flex flex-col gap-1">
@@ -79,8 +84,13 @@ export default function Contact({ id }) {
                                     </div>
                                 </a>
                             </div>
-                        </div>
-                        <div className="card w-full !p-[16px] flex flex-col">
+                        </motion.div>
+                        <motion.div
+                            className="card w-full !p-6 flex flex-col"
+                            initial={{ opacity: 0, y: -25 }}
+                            animate={isInView ? { opacity: 1, y: 0 } : {}}
+                            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                        >
                             <form onSubmit={sendEmail} className="w-full">
                                 <p>{t('contact.email_label')}</p>
                                 <input
@@ -101,7 +111,7 @@ export default function Contact({ id }) {
                                 />
                                 <button>{t('contact.form_send')}</button>
                             </form>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </motion.div>

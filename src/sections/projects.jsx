@@ -28,7 +28,7 @@ export default function Projects({ id }) {
                             initial={{ opacity: 0, y: -25 }}
                             animate={isInView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-                            className="card !p-[16px] break-inside-avoid mb-4">
+                            className="card !p-6 break-inside-avoid mb-4">
                             <h2>{t('projects.subheading')}</h2>
                             <br />
                             <p className="text-[var(--color-body)]">{t('projects.description')}</p>

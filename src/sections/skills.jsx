@@ -42,66 +42,74 @@ export default function Skills({ id }) {
                 animate={isInView ? { opacity: 1 } : {}}
                 transition={{ duration: 0.8, ease: "easeOut" }} >
                 <SectionHeader title={'<' + _t('skills.heading') + '/>'} />
-                <div className="solid-background flex flex-col md:flex-row gap-8 p-8">
-                    <motion.div initial={{ opacity: 0 }}
-                        animate={isInView ? { opacity: 1 } : {}}
-                        transition={{
-                            duration: 1, ease: "easeOut", delay: 0.5
-                        }} >
-                        <div>
-                            <div className="flex flex-col md:flex-row gap-[16px] text-center">
-                                <div className="card !p-[16px]">
-                                    <h5 className="mb-4">{_t('skills.frontend')}</h5>
-                                    <div className="grid grid-cols-5 md:grid-cols-3 gap-4 justify-items-center">
-                                        <Skill name={"Flutter"} imgSrc={flutter} size={48} />
-                                        <Skill name={"ReactJs"} imgSrc={react} size={48} />
-                                        <Skill name={"Next.js"} imgSrc={nextjs} size={48} />
-                                        <Skill name={"Typescript"} imgSrc={typescript} size={48} />
-                                        <Skill name={"Javascript"} imgSrc={javascript} size={48} />
-                                        <Skill name={"CSS3"} imgSrc={css} size={48} />
-                                        <Skill name={"HTML5"} imgSrc={html} size={48} />
-                                        <Skill name={"Tailwind CSS"} imgSrc={tailwind} size={48} />
-                                        <Skill name={"Framer Motion"} imgSrc={framerMotion} size={48} />
-                                    </div>
+                <div className="solid-background flex flex-col md:flex-row gap-4 p-8">
+                    <div className="flex flex-col w-full gap-4">
+                        <div className="flex flex-col md:flex-row gap-4 text-center">
+                            <motion.div
+                                className="card !p-6 flex-1"
+                                initial={{ opacity: 0, y: -25 }}
+                                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                                transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+                            >
+                                <h5 className="mb-4">{_t('skills.frontend')}</h5>
+                                <div className="grid grid-cols-5 md:grid-cols-3 gap-4 justify-items-center">
+                                    <Skill name={"Flutter"} imgSrc={flutter} size={48} />
+                                    <Skill name={"ReactJs"} imgSrc={react} size={48} />
+                                    <Skill name={"Next.js"} imgSrc={nextjs} size={48} />
+                                    <Skill name={"Typescript"} imgSrc={typescript} size={48} />
+                                    <Skill name={"Javascript"} imgSrc={javascript} size={48} />
+                                    <Skill name={"CSS3"} imgSrc={css} size={48} />
+                                    <Skill name={"HTML5"} imgSrc={html} size={48} />
+                                    <Skill name={"Tailwind CSS"} imgSrc={tailwind} size={48} />
+                                    <Skill name={"Framer Motion"} imgSrc={framerMotion} size={48} />
                                 </div>
-                                <div className="card !p-[16px]">
-                                    <h5 className="mb-4">{_t('skills.backend')}</h5>
-                                    <div className="grid grid-cols-5 md:grid-cols-3 gap-4 justify-items-center">
-                                        <Skill name={"Java"} imgSrc={java} size={48} />
-                                        <Skill name={"C#"} imgSrc={csharp} size={48} />
-                                        <Skill name={"Python"} imgSrc={python} size={48} />
-                                        <Skill name={"Prisma"} imgSrc={prisma} size={48} />
-                                        <Skill name={"Symfony"} imgSrc={symfony} size={48} />
-                                        <Skill name={"MariaDB"} imgSrc={mariadb} size={48} />
-                                        <Skill name={"MySQL"} imgSrc={mysql} size={48} />
-                                        <Skill name={"MongoDB"} imgSrc={mongodb} size={48} />
-                                    </div>
+                            </motion.div>
+                            <motion.div
+                                className="card !p-6 flex-1"
+                                initial={{ opacity: 0, y: -25 }}
+                                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                            >
+                                <h5 className="mb-4">{_t('skills.backend')}</h5>
+                                <div className="grid grid-cols-5 md:grid-cols-3 gap-4 justify-items-center">
+                                    <Skill name={"Java"} imgSrc={java} size={48} />
+                                    <Skill name={"C#"} imgSrc={csharp} size={48} />
+                                    <Skill name={"Python"} imgSrc={python} size={48} />
+                                    <Skill name={"Prisma"} imgSrc={prisma} size={48} />
+                                    <Skill name={"Symfony"} imgSrc={symfony} size={48} />
+                                    <Skill name={"MariaDB"} imgSrc={mariadb} size={48} />
+                                    <Skill name={"MySQL"} imgSrc={mysql} size={48} />
+                                    <Skill name={"MongoDB"} imgSrc={mongodb} size={48} />
                                 </div>
-                            </div>
-                            <div className="card !p-[16px] mt-[16px] text-center">
-                                <h5 className="mb-4">{_t('skills.other')}</h5>
-                                <div className="grid grid-cols-5 md:grid-cols-6 gap-4 justify-items-center">
-                                    <Skill name={"Git"} imgSrc={git} size={48} />
-                                    <Skill name={"RESTful APIs"} imgSrc={rest} size={48} />
-                                    <Skill name={"Firebase"} imgSrc={firebase} size={48} />
-                                    <Skill name={"Responsive Design"} imgSrc={responsive} size={48} />
-                                    <Skill name={"Figma"} imgSrc={figma} size={48} />
-                                    <Skill name={"Docker"} imgSrc={docker} size={48} />
-                                </div>
-                            </div>
+                            </motion.div>
                         </div>
-                    </motion.div>
-                    <div className="flex flex-col w-[100%] md:w-[50%] md:pt-6 text-[var(--color-body)]">
-                        <motion.div initial={{ opacity: 0, y: -25 }}
-                            animate={isInView ? { opacity: 1 } : {}}
-                            transition={{
-                                duration: 1, ease: "easeOut", delay: 1
-                            }} >
-                            <p>{_t('skills.p1')}</p>
-                            <br />
-                            <p>{_t('skills.p2')}</p>
+                        <motion.div
+                            className="card !p-6 text-center"
+                            initial={{ opacity: 0, y: -25 }}
+                            animate={isInView ? { opacity: 1, y: 0 } : {}}
+                            transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+                        >
+                            <h5 className="mb-4">{_t('skills.other')}</h5>
+                            <div className="grid grid-cols-5 md:grid-cols-6 gap-4 justify-items-center">
+                                <Skill name={"Git"} imgSrc={git} size={48} />
+                                <Skill name={"RESTful APIs"} imgSrc={rest} size={48} />
+                                <Skill name={"Firebase"} imgSrc={firebase} size={48} />
+                                <Skill name={"Responsive Design"} imgSrc={responsive} size={48} />
+                                <Skill name={"Figma"} imgSrc={figma} size={48} />
+                                <Skill name={"Docker"} imgSrc={docker} size={48} />
+                            </div>
                         </motion.div>
                     </div>
+                    <motion.div
+                        className="card !p-6 flex flex-col w-[100%] md:w-[50%] text-[var(--color-body)]"
+                        initial={{ opacity: 0, y: -25 }}
+                        animate={isInView ? { opacity: 1, y: 0 } : {}}
+                        transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+                    >
+                        <p>{_t('skills.p1')}</p>
+                        <br />
+                        <p>{_t('skills.p2')}</p>
+                    </motion.div>
                 </div>
             </motion.div>
         </section>
