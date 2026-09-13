@@ -6,12 +6,7 @@ import { Link } from "react-router-dom";
 export default function Project({ slug, name, description, technologies, openSource, image, githubUrl }) {
     const { t } = useTranslation();
     return (
-        <motion.div className="flex flex-col w-full text-start !p-0 card break-inside-avoid mb-12"
-            initial={{ scale: 1 }}
-            whileHover={{
-                scale: 1.025,
-                transition: { duration: 0.1 },
-            }} >
+        <motion.div className="flex flex-col w-full text-start !p-0 card break-inside-avoid mb-4 hover:scale-[1.01]">
             <img
                 src={image ?? prefab}
                 alt="Prefab"
