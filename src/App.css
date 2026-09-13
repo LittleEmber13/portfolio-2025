@@ -12,6 +12,7 @@
   --color-primary: #00aaff;
   --color-primary-light: #00f7ff;
   --color-secondary: #d631ff;
+  --color-border: #2f2f2f;
   --color-nav-bar-glow: #00aaff1c;
 }
 
@@ -86,8 +87,23 @@ body {
 }
 
 .solid-background {
+  position: relative;
   background-color: var(--color-background);
+  border: 1px solid rgba(47, 47, 47, 0.25);
   border-radius: 16px;
+}
+
+.solid-background::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: inherit;
+  opacity: 0.18;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Cfilter id='n' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='64' height='64' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 64px 64px;
 }
 
 html {
@@ -104,11 +120,25 @@ html {
 }
 
 .card {
+  position: relative;
   background-color: var(--color-surface);
-  border: 1px solid var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: 8px;
   padding: 10px;
   transition: all 0.3s ease;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  opacity: 0.18;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Cfilter id='n' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='64' height='64' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 64px 64px;
 }
 
 .card:hover {
